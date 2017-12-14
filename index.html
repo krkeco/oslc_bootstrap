@@ -34,6 +34,13 @@
     <link href="css/custom.css" rel="stylesheet" type="text/css">
 
 
+ 
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
     <!-- slider -->
   <!--   
     <link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
@@ -79,62 +86,94 @@
 
 
 
+<div id="navLinks">
+</br></br>
+    <ul>
+        <li class="itemLinks" data-pos="0px"></li>
+        <li class="itemLinks" data-pos="-550px"></li>
+        <li class="itemLinks" data-pos="-1100px"></li>
+        <li class="itemLinks" data-pos="-1650px"></li>
+    </ul>
+</div>
+ <div id="contentContainer">
+	 <div id="wrapper">
+	    <div id="itemOne" class="content">
+	 
+	    </div>
+	    <div id="itemTwo" class="content">
+	 
+	    </div>
+	    <div id="itemThree" class="content">
+	 
+	    </div>
+	    <div id="itemFour" class="content">
+	 
+	    </div>
+	</div>
+</div>
+<script>
+ // just querying the DOM...like a boss!
+var links = document.querySelectorAll(".itemLinks");
+var wrapper = document.querySelector("#wrapper");
 
-    <div id="sliderFrame">
-    
-        <!--thumbnails-->
-        <div id="thumbs">
-            <div class="thumb"><img src="img/slider/Candlelight-Services_thumb.jpg" /></div>
-            <div class="thumb"><img src="img/slider/Childrens-Program_thumb.jpg" /></div>
-            <div class="thumb"><img src="img/slider/Christmas-Day_thumb.jpg" /></div>
-            <div class="thumb"><img src="img/slider/Rose-Parade_thumb.jpg" /></div>
-        </div>
-
-
-        <div id="slider">
-
-
-        <!-- 
-            <a href="http://www.menucool.com/">
-                <img src="images/image-slider-1.jpg" alt="Welcome to Menucool.com" />
-            </a> -->
-     <!--        <a class="lazyImage" href="images/image-slider-2.jpg" title="Customizable Transition Effects">Customizable Transition Effects</a>
-            <a href="http://www.menucool.com/javascript-image-slider">
-                <b data-src="img/slider/CandleLight-Service.jpg" data-alt="#htmlcaption3">Image Slider</b>
-            </a> --><!-- 
-            <a class="lazyImage" href="img/slider/CandleLight-Service.jpg" title="Pure Javascript. No jQuery. No flash.">Plain Javascript Slider</a> -->
-            <a class="lazyImage" href="img/slider/Candlelight-Services.jpg" title="#htmlcaption5"><!-- Lazy Loading Image --></a>
-            <a class="lazyImage" href="img/slider/Childrens-Program.jpg" title="#htmlcaption5"><!-- Lazy Loading Image --></a>
-            <a class="lazyImage" href="img/slider/Christmas-Day.jpg" title="Light weight Image Slider"><!-- Light weight Image Slider --></a>
-            <a class="lazyImage" href="img/slider/Rose-Parade.jpg" title="Fine tuned. Sleek & Smooth"><!-- Fine tuned. Sleek & Smooth --></a>
-
-
-        </div>
-       <!--  <div style="display: none;">
-            <div id="htmlcaption3">
-                <em>HTML</em> caption. Back to <a href="http://www.menucool.com/">Menucool</a>.
-            </div>
-            <div id="htmlcaption5">
-                Smart Lazy Loading Image
-            </div>
-        </div> -->
+var contents = document.querySelectorAll(".content");
 
 
-            
-    </div>
+//need to change wrapper content and data-post relative to screen size
 
+var wid = screen.width;
+document.getElementById("contentContainer").style.width = wid+"px";
+document.getElementById("wrapper").style.width = 4*wid+"px";
+for(var i = 0; i<contents.length; i++){
+	var content = contents[i];
+	content.style.width = wid+"px";
+}
 
+ 
+// the activeLink provides a pointer to the currently displayed item
+var activeLink = 0;
+ 
+// setup the event listeners
+for (var i = 0; i < links.length; i++) {
+    var link = links[i];
+    link.addEventListener('click', setClickedItem, false);
+    link.setAttribute('data-pos',-i*wid+"px");
+ 
+    // identify the item for the activeLink
+    link.itemID = i;
+}
+ 
+// set first item as active
+links[activeLink].classList.add("active");
+ 
+function setClickedItem(e) {
+    removeActiveLinks();
+ 
+    var clickedLink = e.target;
+    activeLink = clickedLink.itemID;
+ 
+    changePosition(clickedLink);
+}
+ 
+function removeActiveLinks() {
+    for (var i = 0; i < links.length; i++) {
+        links[i].classList.remove("active");
+    }
+}
+ 
+// Handle changing the slider position as well as ensure
+// the correct link is highlighted as being active
+function changePosition(link) {
+    var position = link.getAttribute("data-pos");
+ 
+    var translateValue = "translate3d(" + position + ", 0px, 0)";
+    wrapper.style.transform = translateValue;
+ 
+    link.classList.add("active");
+}
 
-    <!-- 
+</script>
 
-
-
-        <div id="slider">
-                  <img src="img/slider/Candlelight-Services.jpg">
-                    <img src="img/slider/Childrens-Program.jpg">
-                    <img src="img/slider/Christmas-Day.jpg">
-                    <img src="img/slider/Rose-Parade.jpg">
-        </div> -->
 
 
     <header class="masthead" id="header">

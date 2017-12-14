@@ -4,6 +4,80 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
+
+ #wrapper {
+    width: 2200px;
+    transform: translate3d(0, 0, 0);
+    transition: transform .5s ease-in-out;
+}
+.content {
+    float: left;
+    width: 1205px;
+    height: 805px;
+    white-space: normal;
+    background-repeat: no-repeat;
+    background-size:95% 100%;
+}
+#itemOne {
+    background-color: #fff;
+    background-image: url('../img/slider/Candlelight-Services.jpg');
+}
+#itemTwo {
+    background-color: #fff;
+    background-image: url("../img/slider/Childrens-Program.jpg");
+}
+#itemThree {
+    background-color: #fff;
+    background-image: url("../img/slider/Christmas-Day.jpg");
+}
+#itemFour {
+    background-color: #fff;
+    background-image: url("../img/slider/Rose-Parade.jpg");
+}
+#contentContainer {
+    width: 4820px;
+    margin: -10px;
+    height: 805px;
+    border: 5px black solid;
+    overflow: hidden;
+}
+
+#navLinks {
+    text-align: center;
+    width: 100%;
+    background-color: #000;
+}
+    #navLinks ul {
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+        margin-top: 6px;
+    }
+        #navLinks ul li {
+            float: left;
+            text-align: center;
+            margin: 10px;
+            list-style: none;
+            cursor: pointer;
+            background-color: #CCCCCC;
+            padding: 5px;
+            border-radius: 50%;
+            border: black 5px solid;
+        }
+            #navLinks ul li:hover {
+                background-color: #FFFF00;
+            }
+            #navLinks ul li.active {
+                background-color: #333333;
+                color: #FFFFFF;
+                outline-width: 7px;
+            }
+                #navLinks ul li.active:hover {
+                    background-color: #484848;
+                    color: #FFFFFF;
+                }
+
+
 .rounded-border{
   border-radius: 15px;
 }
