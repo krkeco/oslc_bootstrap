@@ -1,5 +1,27 @@
 TODO
 
-fix menu and background image at top (masthead)
+fix staff page templates
+	wtf format
+	emails to all peeps
 
-add real content!
+download all images currently on wp and put in local files
+
+add images to fellowships page
+	music academy
+	choir/bells
+	lwml (update flyer for 2018)
+	get support group blerp from rick
+
+missions:
+	union station: picture
+	walters
+	terhunes
+	azusa
+
+leadership
+	add summaries
+	add photos to pop
+
+sermons page
+
+calendar
