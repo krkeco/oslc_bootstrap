@@ -1,8 +1,8 @@
 TODO
 
-fix staff page templates
-	wtf format
+staff
 	emails to all peeps
+	add deacons
 
 download all images currently on wp and put in local files
 
@@ -19,9 +19,5 @@ missions:
 	azusa
 
 leadership
-	add summaries
-	add photos to pop
 
 sermons page
-
-calendar
