@@ -3,9 +3,15 @@
 
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 
-<script>function openScoutSite() {
+<script>
+function openScoutSite() {
     window.open("http://troop126arcadia.com/");
-}</script>
+}
+function openTerhuneSite() {
+    window.open("http://toalltribes.com/");
+}
+
+</script>
   <head>
 
     <link rel="shortcut icon" type="image/x-icon" href="img/logo/48.png" />
@@ -54,7 +60,7 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-gray" id="mainNav">
       <div class="container">
 
         <img class="img-fluid d-block mx-auto" src="img/logo/48.png" alt="">
@@ -85,15 +91,16 @@
     </nav>
 
 
-
-<div id="navLinks">
-</br></br>
-    <ul>
-        <li class="itemLinks" data-pos="0px"></li>
-        <li class="itemLinks" data-pos="-550px"></li>
-        <li class="itemLinks" data-pos="-1100px"></li>
-        <li class="itemLinks" data-pos="-1650px"></li>
-    </ul>
+<div id="header">
+	<div id="navLinks" class="bg-gray">
+	</br></br>
+	    <ul>
+	        <li class="itemLinks" data-pos="0px"></li>
+	        <li class="itemLinks" data-pos="-100vw"></li>
+	        <li class="itemLinks" data-pos="-200vw"></li>
+	        <li class="itemLinks" data-pos="-300vw"></li>
+	        </ul>
+	</div>
 </div>
  <div id="contentContainer">
 	 <div id="wrapper">
@@ -118,18 +125,6 @@ var wrapper = document.querySelector("#wrapper");
 
 var contents = document.querySelectorAll(".content");
 
-
-//need to change wrapper content and data-post relative to screen size
-
-var wid = screen.width;
-document.getElementById("contentContainer").style.width = wid+"px";
-document.getElementById("wrapper").style.width = 4*wid+"px";
-for(var i = 0; i<contents.length; i++){
-	var content = contents[i];
-	content.style.width = wid+"px";
-}
-
- 
 // the activeLink provides a pointer to the currently displayed item
 var activeLink = 0;
  
@@ -137,15 +132,17 @@ var activeLink = 0;
 for (var i = 0; i < links.length; i++) {
     var link = links[i];
     link.addEventListener('click', setClickedItem, false);
-    link.setAttribute('data-pos',-i*wid+"px");
+    // link.setAttribute('data-pos',-i*wid+"px");
  
     // identify the item for the activeLink
     link.itemID = i;
+
 }
  
 // set first item as active
 links[activeLink].classList.add("active");
- 
+
+
 function setClickedItem(e) {
     removeActiveLinks();
  
@@ -172,11 +169,52 @@ function changePosition(link) {
     link.classList.add("active");
 }
 
+function slideTime(){
+
+    for (var i = 0; i < links.length; i++) {
+        links[i].classList.remove("active");
+    }
+
+    activeLink +=1;
+    if(activeLink >= links.length){
+        activeLink = 0;
+    }
+
+    var position = links[activeLink].getAttribute("data-pos");
+    
+    var translateValue = "translate3d(" + position + ", 0px, 0)";
+    wrapper.style.transform = translateValue;
+ 
+    link.classList.add("active");
+    
+    setTimeout(function(){ 
+        slideTime(); }, 4000);
+}
+
+setTimeout(function(){ 
+    slideTime() }, 4000);
+
+
+// function nextSlide(){
+//     removeActiveLinks();
+//     link = links[activeLink];
+//     var nextLink = link.target;
+//     activeLink = nextLink.itemID;
+ 
+//     changePosition(nextLink);
+// }
+
+// function timer(){
+// 	setTimeout(
+// 		,1000);
+// }
+// timer();
+
 </script>
 
 
 
-    <header class="masthead" id="header">
+    <header class="masthead" id="about">
       <div class="header-content">
         <div class="header-content-inner">
           <h1 id="homeHeading">
@@ -185,25 +223,62 @@ function changePosition(link) {
           <hr>
             
             <p>
-              Coming together, to be sent out
-            </p>
 
-            <a class="btn button-primary btn-xl btn-default portfolio-link" data-toggle="modal" href="#service_time_pop">
+                Our Savior Lutheran Church  is part of the Lutheran Church Missouri Synod.
+                </br></br>
+                We worship in Arcadia, California.
+              
+                
+
+               <div>
+                <a class="btn-default portfolio-link" data-toggle="modal" href="#calendar_pop">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <h4>
+                        Church Calendar
+                      </h4>
+                    </div>
+                  </div>
+                </a>
+               </div>
+
+                </br>
+
+           <div>
+            <a class="btn-default portfolio-link" data-toggle="modal" href="#service_time_pop">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
-                  <h4 class="section-heading text-white">
+                  <h4>
                     Worhip Times
                   </h4>
                 </div>
               </div>
             </a>
+           </div>
+
+            </br>
+           <div>
+            <a class="btn-default portfolio-link" data-toggle="modal" href="#beliefs_pop">
+	          <div class="portfolio-hover">
+	            <div class="portfolio-hover-content">
+	              <h4>
+	                Our Beliefs
+	              </h4>
+	            </div>
+	          </div>
+	        </a>
+	       </div>
+
+            </p>
+
+
           </hr>
         </div>
       </div>
     </header>
 
-
-    <section class="bg-red" id="about">
+<!-- 
+    <section class="bg-red" >
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
@@ -252,7 +327,7 @@ function changePosition(link) {
         </div>
       </div>
     </section>
-
+ -->
 
     <!-- Modal beliefs -->
     <div class="portfolio-modal modal fade" id="beliefs_pop" tabindex="-1" role="dialog" aria-hidden="true">
@@ -637,7 +712,7 @@ function changePosition(link) {
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Union Station</h2>
-                  <p class="item-intro text-muted">Third Saturady of the month</p>
+                  <p class="item-intro text-muted">Third Saturday of the month</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
                   <p>
                     <strong>Join us as we serve through our Adopt-a­-Meal</strong> program­.  We provide dinner for the Pasadena Union Station homeless shelter on the <strong>4th Saturday of every month.  We leave at 6:15pm from church
@@ -650,9 +725,9 @@ function changePosition(link) {
                     <li>Client: Lines</li>
                     <li>Category: Branding</li>
                   </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <!-- <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close Project</button>
+                    Close Project</button> -->
                 </div>
               </div>
             </div>
@@ -748,7 +823,7 @@ function changePosition(link) {
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Movie Night</h2>
                   <p class="item-intro text-muted">1st Saturday of each month</p>
-                  <img class="img-fluid d-block mx-auto" src="http://oslcarcadia.com/wp-content/uploads/2015/06/potluck.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto rounded-border" src="img/fellowships/potluck.jpg" alt="">
 
                   Meets in the Fellowship Hall. Dinner starts at <strong>6:00 p.m</strong>. 
                   The movie Starts at <strong>6:30 p.m</strong>.
@@ -940,15 +1015,15 @@ Jenny, Jamie, (cameo: Allison, and KC)</p>
 </br>
 </br>
 </br>
-<img class="alignnone size-full wp-image-732" src="http://oslcarcadia.com/wp-content/uploads/2016/04/ralphs.png" alt="ralphs" />
-<img class="alignnone size-medium wp-image-731" src="http://oslcarcadia.com/wp-content/uploads/2016/04/ralphs-barcode-300x96.jpg" alt="ralphs barcode" />
+<img class="img-fluid d-block mx-auto" src="img/giving/ralphs.png" alt="ralphs" />
+<img class="img-fluid d-block mx-auto" src="img/giving/ralphs_code.jpg" alt="ralphs barcode" />
 </br>
 If you shop at Ralph's please register your Ralph's card with this barcode and Ralph's will give a portion of their proceeds to the youth program. All you have to do is bring this barcode and have them scan it onto your club card and it should automatically donate every time you use your card with a purchase.
 </br></br></br>
 Another great way to support us is through the Amazon smiles program. By clicking the link below, when you shop on Amazon, a percent of the sale will go to our church. Every little bit adds up, and we really appreciate it!
 </br>
 <a href="https://smile.amazon.com/ch/95-2567604">
-<img class="alignnone size-medium wp-image-735" src="http://oslcarcadia.com/wp-content/uploads/2016/04/Amazon-Smile-300x145.jpg" alt="Amazon-Smile" /></a>
+<img class="img-fluid d-block mx-auto" src="img/giving/amazon_smile.jpg" alt="Amazon-Smile" /></a>
 
                 </div>
               </div>
@@ -978,11 +1053,9 @@ Another great way to support us is through the Amazon smiles program. By clickin
                     <a href="http://oslcarcadia.com/wp-content/uploads/2015/07/musicacademy.pdf">Click here to view our Spring calendar</a>
 
                     <p style="text-align: left;">If you have any questions or if you would like to register, please email Dr. Marija Strohm at <a href="mailto:music.academy@oslcarcadia.org">music.academy@oslcarcadia.org</a></p>
-                    <p style="text-align: left;"><img class="alignnone size-medium wp-image-642" src="http://oslcarcadia.com/wp-content/uploads/2015/07/brian-heesh-guitar--300x169.jpg" alt="brian heesh guitar"></p>
-                    <p style="text-align: left;"><a href="http://oslcarcadia.com/wp-content/uploads/2015/07/Flyer-Fall-2016.pdf">Flyer, Fall 2016</a></p>
+                    
 
-
-                    <hr>
+                    <!-- <hr>
 
                     <h3 style="text-align: left;">NEW GUITAR ACADEMY</h3>
                     <p style="text-align: left;"><img class="size-medium wp-image-553 alignleft" src="http://oslcarcadia.com/wp-content/uploads/2015/07/guitar-academy-2016-287x300.jpg" alt="guitar academy 2016">For Students age 15- Adults OSLC is now offering our new Guitar Academy program on Monday nights.&nbsp; Please contact <a href="mailto:pkim@oslcarcadia.org">pkim@oslcarcadia.org</a> or call 626-447-7690 if you are interested in being a part of this free program to the community.</p>
@@ -992,7 +1065,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
                     <p class="p1">"Phillip is a wonderful musician and a great teacher. He really cares about his students." ~Stefano A</p>
                     <p class="p1">"I love the guitar class.&nbsp; I would highly recommend anyone to take lessons with you.&nbsp; You are a very patient and energetic teacher.&nbsp; I appreciate that you work with each individual where we are and you push us to go out of our comfort zone.&nbsp; And you explain and answer all our questions...a very spiritual time..." ~ Pam D</p>
                     <p class="p1">"Taking guitar lessons with Phillip&nbsp;has been a wonderful and fun experience for me. I have gone from not knowing the guitar strings (E, A, D, G, B, E) to playing some Blues...sooo cool! In addition, I was fortunate to be surrounded by a fun and caring group of people. Did I mention I'm in my Mid-50's? If I can do it, so can you." ~ Fred F</p>
-                    <p class="p1">"Phillip is an awesome guitar teacher.&nbsp; He's patient, encouraging, and it's obvious he really loves guitar, which is everything one could hope for in a teacher. If you get a chance, take his class, you'll be glad you did." &nbsp;~ Joel B</p>
+                    <p class="p1">"Phillip is an awesome guitar teacher.&nbsp; He's patient, encouraging, and it's obvious he really loves guitar, which is everything one could hope for in a teacher. If you get a chance, take his class, you'll be glad you did." &nbsp;~ Joel B</p> -->
 
 
                  <!--  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
@@ -1004,7 +1077,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
                   </ul> -->
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close Project</button>
+                    Close this</button>
                 </div>
               </div>
             </div>
@@ -1021,29 +1094,53 @@ Another great way to support us is through the Amazon smiles program. By clickin
             <div class="lr">
               <div class="rl"></div>
             </div>
-          </div>
+          </div><!-- 
           <div class="container">
-          <div id="sliderFrame">
+          <div id="sliderFrame"> -->
     
         <!--thumbnails-->
-        <div id="thumbs">
+      <!--   <div id="thumbs">
             <div class="thumb"><img src="img/slider/Candlelight-Services_thumb.jpg" /></div>
             <div class="thumb"><img src="img/slider/Childrens-Program_thumb.jpg" /></div>
             <div class="thumb"><img src="img/slider/Christmas-Day_thumb.jpg" /></div>
             <div class="thumb"><img src="img/slider/Rose-Parade_thumb.jpg" /></div>
-        </div>
+        </div> -->
+ <div id="contentContainer">
+	 <div id="wrapper">
+	    <div id="choir1" class="content">
+	 
+	    </div>
+	    <div id="choir2" class="content">
+	 
+	    </div>
+	    <div id="choir3" class="content">
+	 
+	    </div>
+	    <div id="choir4" class="content">
+	 
+	    </div>
+	</div>
+</div>
 
-
+<div id="navLinks" class="bg-light">
+    <ul>
+        <li class="itemLinks" data-pos="0px"></li>
+        <li class="itemLinks" data-pos="-100vw"></li>
+        <li class="itemLinks" data-pos="-200vw"></li>
+        <li class="itemLinks" data-pos="-300vw"></li>
+        </ul>
+</div>
+<!-- 
         <div id="slider">
 
-            <a class="lazyImage" href="img/fellowships/choirbells/bells1.jpg" title="#htmlcaption5"><!-- Lazy Loading Image --></a>
-            <a class="lazyImage" href="img/fellowships/choirbells/bells2.jpg" title="#htmlcaption5"><!-- Lazy Loading Image --></a>
-            <a class="lazyImage" href="img/fellowships/choirbells/choir2.jpg" title="Light weight Image Slider"><!-- Light weight Image Slider --></a>
-            <a class="lazyImage" href="img/fellowships/choirbells/choir1.jpg" title="Fine tuned. Sleek & Smooth"><!-- Fine tuned. Sleek & Smooth --></a>
+            <a class="lazyImage" href="img/fellowships/choirbells/bells1.jpg" title="#htmlcaption5"></a>
+            <a class="lazyImage" href="img/fellowships/choirbells/bells2.jpg" title="#htmlcaption5"></a>
+            <a class="lazyImage" href="img/fellowships/choirbells/choir2.jpg" title="Light weight Image Slider"></a>
+            <a class="lazyImage" href="img/fellowships/choirbells/choir1.jpg" title="Fine tuned. Sleek & Smooth"></a>
 
 
         </div>            
-    </div>
+    </div> -->
 
             <div class="row">
               <div class="col-lg-8 mx-auto">
@@ -1109,7 +1206,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">L.W.M.L</h2>
                  <!--  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
-                  <img class="img-fluid d-block mx-auto" src="http://oslcarcadia.com/wp-content/uploads/2015/06/LWML-mites-box.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/fellowships/mites.jpg" alt="">
                   
                   The <strong>Lutheran Women's Missionary League</strong> is for all women young and old.  As Christian women serving the Lord, it is our goal and prayer to help spread the Good News to all corners of the world.  At meetings, we strive to plan events to help each woman grow spiritually in her own walk as well as use her God-given talents and gifts to reach others.  <strong>L.W.M.L.</strong> is for women who are devoted to the mission of the church: to carry out the great commission.
 
@@ -1129,7 +1226,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
                       <div class="lwml-band"><strong>Mite Sunday</strong> is always on the <strong>2nd Sunday of the month</strong>.  It is held outside after both the 8:00 a.m. and the 10:45 a.m. church services.  The “mites” you give are put to a variety of projects and they all add up to make a tremendous difference in lives!  Mite Sunday is sponsored by the LWML.</div>
 
                       </br>
-                      <iframe style="width: 90%; height: 750px;" src="http://docs.google.com/gview?url=http://oslcarcadia.com/wp-content/uploads/2015/06/LWML_2016-2017_for-website.docx&amp;embedded=true" width="300" height="150" frameborder="0"></iframe>
+                   <!--    <iframe style="width: 90%; height: 750px;" src="http://docs.google.com/gview?url=http://oslcarcadia.com/wp-content/uploads/2015/06/LWML_2016-2017_for-website.docx&amp;embedded=true" width="300" height="150" frameborder="0"></iframe> -->
 
                 </div>
               </div>
@@ -1155,11 +1252,13 @@ Another great way to support us is through the Amazon smiles program. By clickin
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Sewing Club</h2>
                   <p class="item-intro text-muted">The Sewing Group meets on the 3rd Saturday of every month 9:00 a.m. to Noon.</p>
-                  <img class="img-fluid d-block mx-auto" src="http://oslcarcadia.com/wp-content/uploads/2015/06/quilt.jpg" alt="">
+                  
                     
                     Attention Knitters:  We have been blessed with boxes of yarn and are looking for people to knit or crochet scarves and hats for the homeless.
 
-                    For more information, please contact Shirl at osl
+                    For more information, please contact Shirl at <a href="mailto: shirl627@gmail.com">shirl627@gmail.com</a>
+
+                    <img class="img-fluid d-block mx-auto" src="img/fellowships/quilt.jpg" alt="">
                 </div>
               </div>
             </div>
@@ -1186,7 +1285,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
                   <h2 class="text-uppercase">Stamp Club</h2>
                   <p class="item-intro text-muted">
                     Stamp club meets the 2nd and 4th Tuesday of each month at 7:00p.m. in the Green Room.</p>
-                  <img class="img-fluid d-block mx-auto" src="http://www.buffalostampclub.org/images/header.gif" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/fellowships/stampclub.jpg" alt="">
                   
 
                 </div>
@@ -1214,7 +1313,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Support Group</h2>
                   <p class="item-intro text-muted">Sundays at 9:30am</p>
-                  <img class="img-fluid d-block mx-auto" src="http://oslcarcadia.com/wp-content/uploads/2015/06/community_support_img.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto rounded-border" src="img/fellowships/community_support_img.jpg" alt="">
                     Help support one another through trial and loss.
                     </br>
                     Meets in the coffeehouse
@@ -1477,28 +1576,31 @@ Another great way to support us is through the Amazon smiles program. By clickin
         <div class="row">
 
           <div class="col-md-6 col-sm-12 portfolio-item ">
-            <a class="portfolio-link mission-box" data-toggle="modal" href="#portfolioModal7">
+
+<a class="portfolio-link" data-toggle="modal" onClick="openTerhuneSite()">
+           <!--  <a class="portfolio-link mission-box bg-dark" data-toggle="modal" href="#portfolioModal7"> -->
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid d-block mx-auto" src="img/missions/terhune.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/missions/terhune_7_4.jpg" alt="">
             </a>
             <div class="portfolio-caption bg-dark">
               <h4>The Terhunes</h4>
               <p class="text-muted">Papua New Guinea</p>
             </div>
+
           </div>
 
           <div class="col-md-6 col-sm-12 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal10">
+            <a class="portfolio-link mission-box bg-dark" data-toggle="modal" href="#portfolioModal10">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid d-block mx-auto" src="img/missions/walters_nobb.png" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/missions/walters_nobb_7_4.png" alt="">
             </a>
             <div class="portfolio-caption bg-dark">
               <h4>The Walters</h4>
@@ -1507,13 +1609,13 @@ Another great way to support us is through the Amazon smiles program. By clickin
           </div>
 
           <div class="col-md-6 col-sm-12 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
+            <a class="portfolio-link mission-box bg-dark" data-toggle="modal" href="#portfolioModal8">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid d-block mx-auto" src="img/missions/homeless.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/missions/homeless_7_4.jpg" alt="">
             </a>
             <div class="portfolio-caption bg-dark">
               <h4>Homeless</h4>
@@ -1522,7 +1624,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
           </div>
 
           <div class="col-md-6 col-sm-12 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
+            <a class="portfolio-link mission-box bg-dark" data-toggle="modal" href="#portfolioModal9">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -1547,7 +1649,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
 
 
     <!-- Groups Grid -->
-    <section class="bg-red" id="portfolio">
+    <section class="bg-gray" id="portfolio">
     <section id="groups"/>
       <div class="container">
         <div class="row">
@@ -1558,8 +1660,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
         </div>
         <div class="row">
 
-          <div class="column col-md-3 col-sm-6" >
-            <div class="col-md-12 col-sm-12 portfolio-item">
+            <div class="col-md-3 col-sm-12 portfolio-item">
               <a class="portfolio-link" data-toggle="modal" href="#group1">
                 <div class="portfolio-hover rounded-border">
                   <div class="portfolio-hover-content rounded-border">
@@ -1567,11 +1668,11 @@ Another great way to support us is through the Amazon smiles program. By clickin
                 <p >Saturdays</p>
                   </div>
                 </div>
-                <img class="img-fluid rounded-border" src="img/fellowships/MovieNight.jpg" alt="">
+                <img class="img-fluid rounded-border" src="img/fellowships/popcorn-box.png" alt="">
               </a>
             </div>
 
-            <div class="col-md-12 col-sm-12 portfolio-item">
+            <div class="col-md-3 col-sm-12 portfolio-item">
               <a class="portfolio-link" data-toggle="modal" href="#group4">
                 <div class="portfolio-hover rounded-border">
                   <div class="portfolio-hover-content rounded-border">
@@ -1579,10 +1680,9 @@ Another great way to support us is through the Amazon smiles program. By clickin
                 <p >Thursdays</p>
                   </div>
                 </div>
-                <img class="img-fluid rounded-border" src="img/fellowships/choir.gif" alt="">
+                <img class="img-fluid rounded-border" src="img/fellowships/duet.png" alt="">
               </a>
             </div>
-          </div>
 
           <div class="col-md-3 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" onClick="openScoutSite()">
@@ -1592,7 +1692,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
               <p >Sundays</p>
                 </div>
               </div>
-              <img class="img-fluid rounded-border" src="img/fellowships/boyscout.jpg" alt="">
+              <img class="img-fluid rounded-border" src="img/fellowships/boyscout.png" alt="">
             </a>
           </div>
 
@@ -1604,7 +1704,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
               <p >Mondays</p>
                 </div>
               </div>
-              <img class="img-fluid rounded-border" src="img/fellowships/musicacademy.jpg" alt="">
+              <img class="img-fluid rounded-border" src="img/fellowships/spanish-guitar-and-keyboard.png" alt="">
             </a>
           </div>
 
@@ -1616,7 +1716,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
               <p >Monthly</p>
                 </div>
               </div>
-              <img class="img-fluid rounded-border" src="img/fellowships/sewing.jpg" alt="">
+              <img class="img-fluid rounded-border" src="img/fellowships/sewing-machine.png" alt="">
             </a>
           </div>
 
@@ -1628,7 +1728,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
               <p >Bi-Monthly</p>
                 </div>
               </div>
-              <img class="img-fluid rounded-border" src="img/fellowships/stampclub.jpg" alt="">
+              <img class="img-fluid rounded-border" src="img/fellowships/stamp.png" alt="">
             </a>
           </div>
 
@@ -1640,7 +1740,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
               <p >Monthly</p>
                 </div>
               </div>
-              <img class="img-fluid rounded-border" src="img/fellowships/lwml.jpeg" alt="">
+              <img class="img-fluid rounded-border" src="img/fellowships/lwml.png" alt="">
             </a>
           </div>
 
@@ -1652,7 +1752,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
               <p >Sundays</p>
                 </div>
               </div>
-              <img class="img-fluid rounded-border" src="img/fellowships/support.jpg" alt="">
+              <img class="img-fluid rounded-border" src="img/fellowships/heart-in-hands.png" alt="">
             </a>
           </div>
 
@@ -1677,7 +1777,7 @@ Another great way to support us is through the Amazon smiles program. By clickin
     <section id="contact" class="bg-dark">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
+          <div class="col-lg-6 mx-auto text-center">
             <h2 class="section-heading">Let's Get In Touch!</h2>
             <hr class="primary" 
           <hr style = " margin: 30px auto; ">
@@ -1685,6 +1785,12 @@ Another great way to support us is through the Amazon smiles program. By clickin
               <span style="text-decoration: underline;"><strong>Office hours:</strong></span>
               </br>Monday - Thursday: 8:30am to 3:30pm
               </br>Friday: 8:30am to 12:00pm
+              </br>
+              </br>
+              </br>
+              </br>
+              </br>
+              </br>
             </p>
           </div>
         </div>
@@ -1697,13 +1803,6 @@ Another great way to support us is through the Amazon smiles program. By clickin
             </a>
           </div>
           
-          <div class="col-lg-2 mr-auto text-center">
-            <a href="mailto: http://oslcarcadia@aol.com">
-              <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-              <p>oslcarcadia@aol.com</p>
-            </a>
-          </div>
-
 
           <a class="portfolio-link col-lg-2 mr-auto text-center" data-toggle="modal" href="#directions_pop">
             <div class="portfolio-hover">
@@ -1714,6 +1813,13 @@ Another great way to support us is through the Amazon smiles program. By clickin
               </div>
             </div>
           </a>
+
+          <div class="col-lg-3 mr-auto text-center">
+            <a href="mailto: http://oslcarcadia@aol.com">
+              <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+              <p>oslcarcadia@aol.com</p>
+            </a>
+          </div>
 
           <a class="portfolio-link col-lg-2 mr-auto text-center" data-toggle="modal" href="#giving_pop">
             <div class="portfolio-hover">

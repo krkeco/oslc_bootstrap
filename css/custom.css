@@ -6,38 +6,54 @@
 
 
  #wrapper {
-    width: 2200px;
+    width: 400vw;
     transform: translate3d(0, 0, 0);
     transition: transform .5s ease-in-out;
 }
 .content {
     float: left;
-    width: 1205px;
-    height: 805px;
+    width: 100vw;
+    height: 70vw;
     white-space: normal;
     background-repeat: no-repeat;
-    background-size:95% 100%;
+    background-size: 100% 100%;
 }
 #itemOne {
-    background-color: #fff;
+    background-color: #000;
     background-image: url('../img/slider/Candlelight-Services.jpg');
 }
 #itemTwo {
-    background-color: #fff;
+    background-color: #000;
     background-image: url("../img/slider/Childrens-Program.jpg");
 }
 #itemThree {
-    background-color: #fff;
+    background-color: #000;
     background-image: url("../img/slider/Christmas-Day.jpg");
 }
 #itemFour {
-    background-color: #fff;
+    background-color: #000;
     background-image: url("../img/slider/Rose-Parade.jpg");
 }
+#choir1 {
+    background-color: #fff;
+    background-image: url('../img/fellowships/choirbells/bells1.jpg');
+}
+#choir2 {
+    background-color: #fff;
+    background-image: url("../img/fellowships/choirbells/bells2.jpg");
+}
+#choir3 {
+    background-color: #fff;
+    background-image: url("../img/fellowships/choirbells/choir2.jpg");
+}
+#choir4 {
+    background-color: #fff;
+    background-image: url("../img/fellowships/choirbells/choir1.jpg");
+}
 #contentContainer {
-    width: 4820px;
+    width: 100vw;
     margin: -10px;
-    height: 805px;
+    height: 70vw;
     border: 5px black solid;
     overflow: hidden;
 }
@@ -80,11 +96,12 @@
 
 .rounded-border{
   border-radius: 15px;
+  margin: 1px;
 }
 
 .mission-box{
 
-  height:300px;
+  height:230px;
 }
 
 .bg-sanctuary{
@@ -96,7 +113,13 @@
   background-size: cover;        
   font-size: 22px;
 }
+h4{
+  color:white;
+}
+h4:hover{
+  color: red;
 
+}
 .bg-red{
   color: white;
   background-color: #400000 !important;
@@ -108,6 +131,9 @@
 .bg-new {
   color: white;
   background-color: #0f1114 !important; }
+.bg-gray {
+  color: white;
+  background-color: #626F82 !important; }
 
 #portfolio .portfolio-item {
   right: 0;
