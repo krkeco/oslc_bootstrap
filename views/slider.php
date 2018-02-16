@@ -1,17 +1,30 @@
 
+    <div id="navLinks" class="bg-gray">
+      <ul>
+        <li class="itemLinks mini-menu-1" data-pos="0"></li>
+        <li class="itemLinks mini-menu-2" data-pos="-100vw"></li>
+        <li class="itemLinks mini-menu-3" data-pos="-200vw"></li>
+        <li class="itemLinks mini-menu-4" data-pos="-300vw"></li>
+      </ul>
+    </div>
+  </div>
+  
   <div id="contentContainer">
    <div id="wrapper">
    
-      <div id="itemFour" class="content btn-default portfolio-link" data-toggle="modal" href="#prayer_pop">
-      </div>
-<!-- 
-      <div  onClick="openLoveFest()" id="itemFive" class="content">
+      <div  id="itemOne" class="content">
       </div>
 
-      <div id="itemSix" class="content">
-      </div> -->
+      <div id="itemTwo" class="content">
+      </div>
+      <div  id="itemFour" class="content">
+      </div>
+
+      <div id="itemThree" class="content">
+      </div>
   </div>
 </div>
+
 <script>
  // just querying the DOM...like a boss!
 var links = document.querySelectorAll(".itemLinks");

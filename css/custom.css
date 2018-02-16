@@ -38,33 +38,33 @@
 }
 
  #wrapper {
-    width: 100%;
+    width: 400vw;
     transform: translate3d(0, 0, 0);
     transition: transform .5s ease-in-out;
 }
 .content {
     float: left;
-    width: 100%;
-    height: 40em;
+    width: 100vw;
+    height: 40vw;
     white-space: normal;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 #itemOne {
     background-color: #000;
-    background-image: url('../img/slider/Candlelight-Services.jpg');
+    background-image: url('../img/slider/easter.jpg');
 }
 #itemTwo {
     background-color: #000;
-    background-image: url("../img/slider/Childrens-Program.jpg");
+    background-image: url("../img/slider/potluck_movie.jpg");
 }
 #itemThree {
     background-color: #000;
-    background-image: url("../img/slider/Christmas-Day.jpg");
+    background-image: url("../img/slider/sunrise.jpg");
 }
 #itemFour {
     background-color: #000;
-    background-image: url("../img/slider/Prayer.jpg");
+    background-image: url("../img/slider/modern_service.jpg");
 }
 #itemFive {
     background-color: #000;
@@ -92,23 +92,23 @@
     background-image: url("../img/fellowships/choirbells/choir1.jpg");
 }
 #contentContainer {
-    width: 100%;
+    width: 400vw;
     /*margin: -1em;*/
-    height: 40em;
-    border-top: 5px black solid;
+    height: 40vw;/*
+    border-top: 5px black solid;*/
     overflow: hidden;
 }
 .mini-menu-1{
-        background-image: url("../img/slider/Candlelight-Services_thumb.jpg");      
+        background-image: url("../img/slider/easter_thumb.jpg");      
 }
 .mini-menu-2{
-        background-image: url("../img/slider/Childrens-Program_thumb.jpg");      
+        background-image: url("../img/slider/potluck_movie_thumb.jpg");      
 }
 .mini-menu-3{
-        background-image: url("../img/slider/Christmas-Day_thumb.jpg");      
+        background-image: url("../img/slider/sunrise_thumb.jpg");      
 }
 .mini-menu-4{
-        background-image: url("../img/slider/Prayer_thumb.jpg");      
+        background-image: url("../img/slider/modern_service_thumb.jpg");      
 }
 .mini-menu-5 {
     background-color: #000;
@@ -127,12 +127,13 @@
     text-align: center;
     width: 100%;
     background-color: #000;
+    border-top: 3px black solid;
 }
     #navLinks ul {
         margin: 0px;
         padding: 0px;
         display: inline-block;
-        margin-top: 50px;
+     /*   margin-top: 50px;*/
     }
         #navLinks ul li {
             float: left;
