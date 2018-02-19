@@ -174,6 +174,47 @@
     </div>
 
     <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="mens_pop" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Men's Network</h2>
+                  <p class="item-intro text-muted">Saturdays 8:00am</p>
+                  
+                    <img class="img-fluid d-block mx-auto" width="100%" src="img/fellowships/men.jpg" alt="">
+                    
+<p>Dig deeper into what it means to step up and live a courageous life with Stepping Up Video Series.  </p><p>
+
+Dennis Rainey unpack what biblical manhood looks like and what it means to be a godly, courageous man in today's world. 
+</p>
+<ul style="text-align: left"><li>
+Engaging stories</li><li>
+Expert teaching</li><li>
+Humorous vignettes</li><li>
+Man-on-the-street interviews</li><li>
+Personal insights</li></ul>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Modal 6 -->
     <div class="portfolio-modal modal fade" id="group7" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">

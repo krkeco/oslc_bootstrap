@@ -63,6 +63,18 @@
           </div>
 
           <div class="col-lg-3 col-md-4 col-sm-6 col-6 portfolio-item portfolio-short">
+            <a class="portfolio-link portfolio-short" data-toggle="modal" href="#mens_pop">
+              <div class="portfolio-hover rounded-border portfolio-short">
+                <div class="portfolio-hover-content rounded-border">
+              <h4>Men's Network</h4>
+              <p >Saturday</p>
+                </div>
+              </div>
+              <img class="img-fluid rounded-border" src="img/fellowships/engineer.png" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 portfolio-item portfolio-short">
             <a class="portfolio-link portfolio-short" data-toggle="modal" onClick="openScoutSite()">
               <div class="portfolio-hover rounded-border portfolio-short">
                 <div class="portfolio-hover-content rounded-border">
