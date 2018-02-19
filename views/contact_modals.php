@@ -86,6 +86,48 @@
 
 
 
+    <!-- Modal calendar -->
+    <div class="portfolio-modal modal fade" id="youth_calendar_pop" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container ">
+                  <!-- Project Details Go Here -->
+
+                  <h2 class="text-uppercase">
+                    Youth Calendar
+                  </h2>
+
+                  <div class="big-calendar">
+                    <iframe
+                      src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=8fh295mmr7a2n6d3jgqaikcj2o%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+                      width="100%" height="600" 
+                      frameborder="0" scrolling="no"
+                                  alignt="left"></iframe>
+                  </div>
+                  <div class="little-calendar">   
+                  <p>Hard to see?  Try flipping your phone to horizontal</p>
+                    <iframe
+                      src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=8fh295mmr7a2n6d3jgqaikcj2o%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+                      width="280" height="600" 
+                      frameborder="0" scrolling="no"
+                      alignt="left"></iframe>
+                  </div>
+               
+                
+             
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
 
     <!-- Modal service times -->
     <div class="portfolio-modal modal fade" id="class_pop" tabindex="-1" role="dialog" aria-hidden="true">
@@ -102,35 +144,15 @@
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
 
-                  <strong>CHURCH SERVICE SCHEDULE</strong>
-                  </br></br>
+                  <strong>Adult Sunday Classes (9:30AM - 10:30AM)</strong>
+                  <p>
+                    1.    A Man Named Martin - Led by Pastor Demel in the Fellowship Hall 
+                  </p><p>
+                    2.    Lutheranism 101 - Led by Martha Bellin in the Martin Luther Classroom
+                  </p><p>
+                    3.    Heaven and Hell - Led by Mark Flath in the Basement 
+                  </p>
 
-                  <strong>SUNDAY 8:00AM and 10:45AM</strong></br>
-
-                  <em><span style="color: #b50012;">(Childcare provided)</span></em>
-                  <div class="page" title="Page 2">
-                   <div class="section">
-                    <div class="layoutArea">
-                      <div class="column">
-
-                        <p style="padding-left: 60px;">Traditional Lutheran style worship with Organ, Choir, Hand bells, and Liturgy. Communion is celebrated on the 1st and 3rd Sundays of the month.</p>
-                        <strong><span style="color: #1f6040;">SUNDAY 9:30AM Youth/Adult Bible Classes</span></strong>
-
-                        </br>
-                        </br>
-
-                        <strong>SUNDAY &nbsp;Praise Service -&nbsp; 6:30 PM</strong>
-                        <p style="padding-left: 60px;">Praise worship with Guitar, Keyboard, and Singing. Communion is celebrated on the 1st and 3rd Sundays of the month.</p>
-              
-
-                        <strong>MONDAY Night Service - 6:30PM</strong>
-                        <p style="padding-left: 60px;">Abbreviated (30 minutes) Traditional worship with piano and organ.
-                        Communion is celebrated on the 1st and 3rd Mondays of the month.</p>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
                  
                 </div>
@@ -164,6 +186,10 @@
                 <script>
                   function enableBtn(){
                       document.getElementById("submit_details").disabled = false;
+
+                      setTimeout(function(){     
+                      document.getElementById("submit_details").disabled = true;
+                       }, 120000);
                   }
                 </script>
                   <form action="send.php" method="post">
@@ -171,9 +197,9 @@
                       Your name:</br>
                       <input name="name" type="text" id="name" size="32" required></br></br>
                       Email address:</br>
-                      <input name="email" type="text" id="email" size="32"></br></br>
+                      <input name="email" type="text" id="email" size="32" required></br></br>
                       Prayer Request:</br>
-                      <textarea name="comment" cols="32" rows="6" id="comment" class="bodytext"></textarea></br>
+                      <textarea name="comment" cols="32" rows="6" id="comment" class="bodytext" required></textarea></br>
                       <div align="center"
                       data-callback="enableBtn"
                       class="g-recaptcha" data-sitekey="6LfQhkUUAAAAAPUqoBazDokoKo9A50nZYcNDURXO"></div></br>

@@ -39,6 +39,7 @@
 
  #wrapper {
     width: 400vw;
+    overflow: hidden;
     transform: translate3d(0, 0, 0);
     transition: transform .5s ease-in-out;
 }
@@ -92,7 +93,7 @@
     background-image: url("../img/fellowships/choirbells/choir1.jpg");
 }
 #contentContainer {
-    width: 400vw;
+    width: 100vw;
     /*margin: -1em;*/
     height: 40vw;/*
     border-top: 5px black solid;*/

@@ -17,10 +17,10 @@
 
       <div id="itemTwo" class="content">
       </div>
-      <div  id="itemFour" class="content">
+      <div  id="itemThree" class="content">
       </div>
 
-      <div id="itemThree" class="content">
+      <div id="itemFour" class="content">
       </div>
   </div>
 </div>
