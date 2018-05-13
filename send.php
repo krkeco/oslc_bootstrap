@@ -24,8 +24,8 @@ try {
 
     //Recipients
     $mail->setFrom('requests@prayers.oslcarcadia.com', 'Mailer');
-    //$mail->addAddress('krkeco@gmail.com', 'KC!');
-   $mail->addAddress('prayerworks42@sbcglobal.net', 'Paula Loftus');     // Add a recipient
+    $mail->addAddress('oslckc@gmail.com', 'KC!');
+    // $mail->addAddress('prayerworks42@sbcglobal.net', 'Paula Loftus');     // Add a recipient
     //$mail->addAddress('contact@example.com');               // Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');
@@ -34,6 +34,46 @@ try {
     //Attachments
     //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
     //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+
+    function died($error) {
+        // your error code can go here
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br /><br />";
+        echo $error."<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
+        die();
+    }
+ 
+
+    // validation expected data exists
+    if( !isset($_POST['email']) ||
+        !isset($_POST['name']) ||
+        !isset($_POST['comment'])) {
+        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+    }
+
+
+    $email = $_POST['email']; // required
+    $name = $_POST['name']; // required
+    $comment = $_POST['comment']; // required
+
+    $error_message = "";
+
+  if(strlen($email) < 2) {
+    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+  }
+ 
+  if(strlen($name) < 2) {
+    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+  }
+ 
+  if(strlen($comment) < 2) {
+    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+  }
+ 
+  if(strlen($error_message) > 0) {
+    died($error_message);
+  }
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML

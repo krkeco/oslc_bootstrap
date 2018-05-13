@@ -38,7 +38,7 @@
 }
 
  #wrapper {
-    width: 400vw;
+    width: 500vw;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
     transition: transform .5s ease-in-out;
@@ -46,26 +46,33 @@
 .content {
     float: left;
     width: 100vw;
-    height: 40vw;
+    height: 60vw;
     white-space: normal;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+#contentContainer {
+    width: 100vw;
+    /*margin: -1em;*/
+    height: 60vw;/*
+    border-top: 5px black solid;*/
+    overflow: hidden;
+}
 #itemOne {
     background-color: #000;
-    background-image: url('../img/slider/easter.jpg');
+    background-image: url('../img/slider/mothersday.jpg');
 }
 #itemTwo {
     background-color: #000;
-    background-image: url("../img/slider/potluck_movie.jpg");
+    background-image: url("../img/slider/BTA.jpg");
 }
 #itemThree {
     background-color: #000;
-    background-image: url("../img/slider/sunrise.jpg");
+    background-image: url("../img/slider/movienight.jpg");
 }
 #itemFour {
     background-color: #000;
-    background-image: url("../img/slider/modern_service.jpg");
+    background-image: url("../img/slider/VBS.jpg");
 }
 #itemFive {
     background-color: #000;
@@ -73,7 +80,7 @@
 }
 #itemSix {
     background-color: #000;
-    background-image: url("../img/slider/Israel.jpg");
+    background-image: url("../img/slider/bicycle.jpg");
 }
 
 #choir1 {
@@ -92,24 +99,17 @@
     background-color: #fff;
     background-image: url("../img/fellowships/choirbells/choir1.jpg");
 }
-#contentContainer {
-    width: 100vw;
-    /*margin: -1em;*/
-    height: 40vw;/*
-    border-top: 5px black solid;*/
-    overflow: hidden;
-}
 .mini-menu-1{
-        background-image: url("../img/slider/easter_thumb.jpg");      
+        background-image: url("../img/slider/mothersday_thumb.jpg");      
 }
 .mini-menu-2{
-        background-image: url("../img/slider/potluck_movie_thumb.jpg");      
+        background-image: url("../img/slider/BTA_thumb.jpg");      
 }
 .mini-menu-3{
-        background-image: url("../img/slider/sunrise_thumb.jpg");      
+        background-image: url("../img/slider/movienight_thumb.jpg");      
 }
 .mini-menu-4{
-        background-image: url("../img/slider/modern_service_thumb.jpg");      
+        background-image: url("../img/slider/VBS_thumb.jpg");      
 }
 .mini-menu-5 {
     background-color: #000;
@@ -117,7 +117,7 @@
 }
 .mini-menu-6 {
     background-color: #000;
-    background-image: url("../img/slider/Israel_thumb.jpg");
+    background-image: url("../img/slider/bicycle_thumb.jpg");
 }
 
 #model-font {

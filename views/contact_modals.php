@@ -197,7 +197,7 @@
                       Your name:</br>
                       <input name="name" type="text" id="name" size="32" required></br></br>
                       Email address:</br>
-                      <input name="email" type="text" id="email" size="32" required></br></br>
+                      <input name="email" type="email" id="email" size="32"  minlength="6" required></br></br>
                       Prayer Request:</br>
                       <textarea name="comment" cols="32" rows="6" id="comment" class="bodytext" required></textarea></br>
                       <div align="center"
@@ -396,9 +396,9 @@ Jenny, Jamie, (cameo: Allison, and KC)</p>
                   </br>
                   <a href="https://smile.amazon.com/ch/95-2567604">
                   <img class="img-fluid d-block mx-auto" src="img/giving/amazon_smile.jpg" alt="Amazon-Smile" /></a>
-<!-- 
+
 <script async src="https://static-na.payments-amazon.com/OffAmazonPayments/us/sandbox/js/Widgets.js"></script>
-<div
+<div id="amazon-button"
     data-ap-widget-type="expressPaymentButton"
     data-ap-signature="vHCvZ5DVaEqJjxcPA6t1G7Qn9iR8%2FjpfDqhIisSqqqA%3D"
     data-ap-seller-id="A2Y9GK43OF1KNK"
@@ -409,15 +409,16 @@ Jenny, Jamie, (cameo: Allison, and KC)</p>
         data-ap-cancel-return-url="https://oslcarcadia.com"
     
     data-ap-currency-code="USD"
-    data-ap-amount="10"
+    data-ap-amount="1"
     data-ap-note=""
     data-ap-shipping-address-required="false"
     data-ap-payment-action="Authorize"
 >
-</div> -->
+</div>
 
                   <div id="AmazonPayButton"></div>
                   <script type="text/javascript">
+                  $('#amaozon-button').data-ap-amount('100');
                    OffAmazonPayments.Button("AmazonPayButton", "A2Y9GK43OF1KNK", {
                      type: "hostedPayment",
 

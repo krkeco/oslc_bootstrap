@@ -1,7 +1,7 @@
 
     <div id="navLinks" class="bg-gray">
       <ul>
-        <li class="itemLinks mini-menu-1" data-pos="0"></li>
+        <li class="itemLinks mini-menu-1" data-pos="0vw"></li>
         <li class="itemLinks mini-menu-2" data-pos="-100vw"></li>
         <li class="itemLinks mini-menu-3" data-pos="-200vw"></li>
         <li class="itemLinks mini-menu-4" data-pos="-300vw"></li>
@@ -11,17 +11,21 @@
   
   <div id="contentContainer">
    <div id="wrapper">
-   
-      <div  id="itemOne" class="content">
+      <div id="itemOne" class="content">
       </div>
-
+   
       <div id="itemTwo" class="content">
       </div>
-      <div  id="itemThree" class="content">
+   
+
+      <div id="itemThree" class="content">
       </div>
 
       <div id="itemFour" class="content">
       </div>
+
+      
+
   </div>
 </div>
 
@@ -49,6 +53,11 @@ for (var i = 0; i < links.length; i++) {
 // set first item as active
 links[activeLink].classList.add("active");
 
+//timechecker for cycle
+var timeOut = 7000;
+
+    var nDate = new Date();
+    var nTime = nDate.getTime();
 
 function setClickedItem(e) {
     removeActiveLinks();
@@ -57,6 +66,22 @@ function setClickedItem(e) {
     activeLink = clickedLink.itemID;
  
     changePosition(clickedLink);
+    
+  //   var d = new Date();
+		// var n = d.getTime();
+		// sliderTimer = n + 7000;
+
+      var nDs = new Date();
+      var nNs = nDs.getTime();
+      nTime = nNs + timeOut;
+          
+    setTimeout(function(){ 
+      if(nNs + timeOut >= nTime){
+        slideTime(); 
+      }
+    }, timeOut);
+    
+
 }
  
 function removeActiveLinks() {
@@ -93,12 +118,21 @@ function slideTime(){
     wrapper.style.transform = translateValue;
  
     link.classList.add("active");
-    
+			
+			var nD = new Date();
+			var nN = nD.getTime();
+    	    
     setTimeout(function(){ 
-        slideTime(); }, 4000);
+      if(nN >= nTime){
+        nTime = nN + timeOut;
+    	  slideTime(); 
+      }
+    }, timeOut);
+  	
+    
 }
 
 setTimeout(function(){ 
-    slideTime() }, 4000);
+    slideTime() }, timeOut);
 
 </script>
