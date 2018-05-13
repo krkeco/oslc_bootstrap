@@ -376,27 +376,45 @@ Jenny, Jamie, (cameo: Allison, and KC)</p>
                   <h2 class="text-uppercase">Giving</h2>
                   <h5>Your contributions help us fuel our missions teams around the world and at home</h5>
                   </br>
+
+                  <h3>Direct Donations:</h3>
+
+<a class="btn btn-success" href="http://localhost/Workspace/oslc/OSLCCreativeBootStrap/amazonpay/ExpressPayment.php" target="_blank">Donate with Amazon</a>
+
+                  </br>
+                  </br>
+<!-- 
                   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                   <input type="hidden" name="cmd" value="_s-xclick">
                   <input type="hidden" name="hosted_button_id" value="777P4Z3QTEVDY">
-                  <label for="myFruit">We accept payment through Paypal: </label>
+                  <label for="myFruit">We also accept payment through Paypal: </label>
                   <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"> 
                   <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 
                   <label for="myFruit">by clicking the button</label></form>
                   </br>
+                  </br> -->
                   </br>
+                  <h3>Program Support:</h3>
                   </br>
-                  <img class="img-fluid d-block mx-auto" src="img/giving/ralphs.png" alt="ralphs" />
-                  <img class="img-fluid d-block mx-auto" src="img/giving/ralphs_code.jpg" alt="ralphs barcode" />
+                  If you shop at Ralphs or on Amazon, join their nonprofit program with us.  Every time you spend money, Ralphs or Amazon will donate a percent to our church.  
                   </br>
-                  If you shop at Ralph's please register your Ralph's card with this barcode and Ralph's will give a portion of their proceeds to the youth program. All you have to do is bring this barcode and have them scan it onto your club card and it should automatically donate every time you use your card with a purchase.
-                  </br></br></br>
-                  Another great way to support us is through the Amazon smiles program. By clicking the link below, when you shop on Amazon, a percent of the sale will go to our church. Every little bit adds up, and we really appreciate it!
+                  It's a great way to give without making a big impact on your wallet!
                   </br>
+                  Click on the button below to link your Amazon account with our church:
+                  </br>
+
                   <a href="https://smile.amazon.com/ch/95-2567604">
                   <img class="img-fluid d-block mx-auto" src="img/giving/amazon_smile.jpg" alt="Amazon-Smile" /></a>
+                  
+                  </br>
 
+                  <img class="img-fluid d-block mx-auto" src="img/giving/ralphs.png" alt="ralphs" />
+                  Show this barcode to a Ralph's Cashier to register with us:
+                  <img class="img-fluid d-block mx-auto" src="img/giving/ralphs_code.jpg" alt="ralphs barcode" />
+                 
+
+<!-- 
 <script async src="https://static-na.payments-amazon.com/OffAmazonPayments/us/sandbox/js/Widgets.js"></script>
 <div id="amazon-button"
     data-ap-widget-type="expressPaymentButton"
@@ -444,7 +462,7 @@ Jenny, Jamie, (cameo: Allison, and KC)</p>
                         }
                     });
                     </script>
-
+ -->
 
 
                 </div>

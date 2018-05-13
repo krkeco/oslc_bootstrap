@@ -6,33 +6,62 @@ $_SESSION["token"] = md5(uniqid(mt_rand(), true));
 <html>
 
 <head>
+
+    <!-- custom css -->
+    <link href="css/amazonpay.css?ver=1.1" rel="stylesheet" type="text/css">
+   
+   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script type='text/javascript' src="https://static-na.payments-amazon.com/OffAmazonPayments/us/sandbox/js/Widgets.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ --><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- 
     <script type='text/javascript' src="https://static-na.payments-amazon.com/OffAmazonPayments/us/sandbox/js/Widgets.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-    <style>
-        label,
-        div {
-            margin: 10px;
-        }
-    </style>
+ -->
 </head>
 
 <body>
+
     <input type="hidden" name="csrf" id="csrf" value="<?php echo $_SESSION["token"]; ?>">
-    <label id="itemname" for="tshirt">Item Name: Long Sleeve Tee</label>
-    <div id="amount" value="100">Price: $100</div>
+    
+    <div class="container">
 
-    <label for="QuantitySelect">Qty:</label>
-    <select id="QuantitySelect">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-    </select>
+<form>
 
-    <div id="AmazonPayButton"></div>
+        <div class="row justify-content-center title">
+            Donate
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="input col-10 col-sm-8 col-md-4 justify-content-center">
+                <input class="form-control " type="text" id="OneSelect" placeholder="Donation amount:"/>
+            </div>
+        </div>
+
+       
+        <div class="row justify-content-center">
+            <div class="input col-10 col-sm-8 col-md-4" >
+                <input class="form-control " type="text" id="Note" placeholder="Memo:"/>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="input col-12" >
+            <div align="middle" style="border-radius:20px;"  id="AmazonPayButton"/>
+        </div>
+</form>
+         
+    </div>
 
     <script type="text/javascript">
+
         OffAmazonPayments.Button("AmazonPayButton", "A2Y9GK43OF1KNK", {
 
             type: "hostedPayment",
@@ -40,9 +69,9 @@ $_SESSION["token"] = md5(uniqid(mt_rand(), true));
             hostedParametersProvider: function(done) {
 
                 $.getJSON("ExpressSignature.php", {
-                    amount: parseInt($("#amount").attr("value")) * parseInt($("#QuantitySelect option:selected").val()),
+                    amount: parseInt($("#OneSelect").val()),
                     currencyCode: 'USD',
-                    sellerNote: $("#itemname").text() + ' QTY: ' + $("#QuantitySelect option:selected").val(),
+                    sellerNote: $("#itemname").text() + ' NOTE: ' + $("#Note").val(),
                     scope: 'payments:billing_address',                   
                     csrf:$("#csrf").val()
 

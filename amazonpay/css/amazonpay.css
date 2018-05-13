@@ -1,0 +1,58 @@
+
+.rounded-border{
+  border-radius: 15px;
+  margin: 1px;
+}
+
+.mission-box{
+
+  height:230px;
+}
+
+h4{
+  color:white;
+}
+h4:hover{
+  color: red;
+}
+.h4-red{
+  color:red;
+}
+.open-sans{
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; 
+  font-weight: 500;
+}
+.bg-red{
+  color: white;
+  background-color: #400000 !important;
+}
+
+.bg-brown {
+  color: white;
+  background-color: #301c00 !important; 
+}
+.bg-new {
+  color: white;
+  background-color: #0f1114 !important; 
+}
+.bg-height{
+  height: 100em;
+}
+.bg-gray {
+  color: white;
+  background-color: #626F82 !important;
+   }
+ .long{
+          height: 150%;
+        }
+
+.input{
+  margin: 15px;
+  borer-radius: 15px;
+}
+
+.title{
+  font-weight: 500;
+  font-size: 40px;
+  font-family: 'Pacifico';
+}
