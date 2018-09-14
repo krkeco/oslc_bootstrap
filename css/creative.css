@@ -65,12 +65,12 @@ section {
 
 ::-moz-selection {
   color: white;
-  background: #222222;
+  background: #fff;
   text-shadow: none; }
 
 ::selection {
   color: white;
-  background: #222222;
+  background: #fff;
   text-shadow: none; }
 
 img::selection {
@@ -82,7 +82,9 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #222222; }
+  -webkit-tap-highlight-color: #fff; }
+
+
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
@@ -94,27 +96,27 @@ body {
   #mainNav .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: #F05F40;
+    color: #fff;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #f05f40; }
+      color: #fff; }
   #mainNav .navbar-toggle {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #222222; }
+    color: #fff; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #222222; }
+    color: #fff; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-      color: #F05F40; }
+      color: #fff; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-      color: #F05F40 !important;
+      color: #fff !important;
       background-color: transparent; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
@@ -138,15 +140,15 @@ body {
         background-color: white; }
         #mainNav.navbar-shrink .navbar-brand {
           font-size: 16px;
-          color: #F05F40; }
+          color: #fff; }
           #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-            color: #f05f40; }
+            color: #fff; }
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-          color: #222222; }
+          color: #fff; }
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-            color: #F05F40; } }
+            color: #fff; } }
 
 header.masthead {
   position: relative;
@@ -349,4 +351,3 @@ header.masthead {
 
 .btn-xl {
   padding: 15px 30px; }
-

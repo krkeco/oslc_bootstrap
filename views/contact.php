@@ -1,3 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+ <head>
+
+    <link style="width: 48px" rel="shortcut icon" type="image/x-icon" href="img/logo/full.svg" />
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OSLCArcadia</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+
+    <!-- reCaptcha for google -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+    <!-- slider -->
+    <!--   
+    <link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="themes/1/js-image-slider.js" type="text/javascript"></script>
+    -->
+
+    <link href="css/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="css/js-image-slider.js" type="text/javascript"></script>
+
+    <!-- custom scripts openlink onclicks -->
+    <script src="css/links.js" type="text/javascript"></script>
+
+    <!-- custom css -->
+    <link href="css/custom.css?ver=1.1" rel="stylesheet" type="text/css">
+   
+  </head>
+
+  <body>
 
     <section id="contact" class="bg-dark">
       <div class="container">
@@ -79,3 +132,9 @@
       </br>
       </br>
     </section>
+
+    
+
+  </body>
+
+</html>

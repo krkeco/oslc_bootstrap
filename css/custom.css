@@ -3,6 +3,13 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
+@font-face {
+    font-family: 'Futura';
+    src:  url('font/futura light bt.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+          url('font/futura light bt.ttf') format('truetype')
+}
+
+
  .paralax{
     /* The image used */
     background-image: url("../img/slider/Childrens-Program.jpg");
@@ -17,9 +24,24 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .align-center{
+    align-items: center;
+    
+  },
+  text-center{
+    text-align: center;
+    },
+  .groups-margin-top{
+    width: 100%;
+    max-width: 100%;
+    padding-top: 50px;
+  }
 .neg-margin{
   margin-top:-2em;  
 }
+
+
 .little-calendar {
   width: 100%;
   max-width: 100%;
@@ -60,7 +82,7 @@
 }
 #itemOne {
     background-color: #000;
-    background-image: url('../img/slider/mothersday.jpg');
+    background-image: url('../img/slider/sermon.jpg');
 }
 #itemTwo {
     background-color: #000;
@@ -68,7 +90,7 @@
 }
 #itemThree {
     background-color: #000;
-    background-image: url("../img/slider/movienight.jpg");
+    background-image: url("../img/slider/scandelous.jpg");
 }
 #itemFour {
     background-color: #000;
@@ -76,7 +98,7 @@
 }
 #itemFive {
     background-color: #000;
-    background-image: url("../img/slider/LFTransformed.jpg");
+    background-image: url("../img/slider/thursdayprayer.jpg");
 }
 #itemSix {
     background-color: #000;
@@ -100,23 +122,21 @@
     background-image: url("../img/fellowships/choirbells/choir1.jpg");
 }
 .mini-menu-1{
-        background-image: url("../img/slider/mothersday_thumb.jpg");      
+        background-image: url("../img/slider/sermon_thumb.jpg");      
 }
 .mini-menu-2{
         background-image: url("../img/slider/BTA_thumb.jpg");      
 }
 .mini-menu-3{
-        background-image: url("../img/slider/movienight_thumb.jpg");      
+        background-image: url("../img/slider/scandelous_thumb.jpg");      
 }
 .mini-menu-4{
         background-image: url("../img/slider/VBS_thumb.jpg");      
 }
 .mini-menu-5 {
-    background-color: #000;
-    background-image: url("../img/slider/LFTransformed_thumb.jpg");
+    background-image: url("../img/slider/thursdayprayer_thumb.jpg");
 }
 .mini-menu-6 {
-    background-color: #000;
     background-image: url("../img/slider/bicycle_thumb.jpg");
 }
 
@@ -193,7 +213,7 @@ h4:hover{
   color:red;
 }
 .open-sans{
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; 
+  font-family: 'Futura', Fallback, sans-serif; 
   font-weight: 500;
 }
 .bg-red{
@@ -275,7 +295,8 @@ h4:hover{
       font-size: 16px;
       font-style: italic;
       margin: 0;
-      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+     font-family: 'Futura', Fallback, sans-serif; 
+   }
 
 #portfolio * {
   z-index: 2; }
@@ -301,7 +322,8 @@ h4:hover{
       font-size: 16px;
       font-style: italic;
       margin: 20px 0 30px;
-      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: 'Futura', Fallback, sans-serif; 
+      }
     .portfolio-modal .modal-content ul.list-inline {
       margin-top: 0;
       margin-bottom: 30px; }
@@ -421,7 +443,8 @@ h4:hover{
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'Futura', Fallback, sans-serif; 
+  }
 
 .button-xl {
   padding: 15px 30px; }
@@ -484,26 +507,37 @@ h4:hover{
             margin-right: auto;
             margin-left: auto; } }
 
-div.background {
-  border: 2px solid black;
-  margin-left: .5em;
-  margin-right: .5em;
-  margin-top: 3em;
+
+
+.frontline-title{
+  margin-top: 2em;
+  color: white;
+  font-size: 6em;
+  line-height: 1;
+  font-family: 'Futura', Fallback, sans-serif; 
 }
 
-div.transbox {
+.transbox {
+  padding-top: 2em;
   margin: .5em;
-  height: 20em;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.7;
-  filter: alpha(opacity=70); /* For IE8 and earlier */
+  margin-bottom: 10em;
+  height: 23em;
+  box-shadow: 0 10px 0 #888;
+  background-color: #eee;
+  opacity: 0.95;
+  filter: alpha(opacity=95); /* For IE8 and earlier */
+}
+
+/*
+div.transbox h2 {
+  padding-bottom: 1em;
 }
 
 div.transbox p {
   font-weight: bold;
   color: #000000;
 }
+*/
 
 
 header.masterhead {

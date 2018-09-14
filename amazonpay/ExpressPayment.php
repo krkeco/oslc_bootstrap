@@ -41,14 +41,14 @@ $_SESSION["token"] = md5(uniqid(mt_rand(), true));
 
         <div class="row justify-content-center">
             <div class="input col-10 col-sm-8 col-md-4 justify-content-center">
-                <input class="form-control " type="text" id="OneSelect" placeholder="Donation amount:"/>
+                <input class="form-control " type="text" id="OneSelect" placeholder="Donation amount"/>
             </div>
         </div>
 
        
         <div class="row justify-content-center">
             <div class="input col-10 col-sm-8 col-md-4" >
-                <input class="form-control " type="text" id="Note" placeholder="Memo:"/>
+                <input class="form-control " type="text" id="Note" placeholder="Memo"/>
             </div>
         </div>
 

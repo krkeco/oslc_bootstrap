@@ -59,9 +59,9 @@
   include 'views/frontline.php';
 ?>
 <?php
-  include 'views/slider.php';
+  //include 'views/slider.php';
 ?>
-     
+  
 <?php
   include 'views/mission_modals.php';
 ?>
@@ -74,20 +74,30 @@
 <?php
   include 'views/contact_modals.php';
 ?>
-
+<!-- 
 
 <?php
   include 'views/youthfamily.php';
-?>     
+?>      -->
 
 <?php
   include 'views/missions.php';
 ?>
 
+<div class="groups-margin-top bg-gray">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading text-uppercase">Fellowships</h2>
+      <h3 class="section-subheading text-muted">Get plugged in!</h3>
+    </div>
+  </div>
+  </div>
+</div>
 
-    <?php
-  include 'views/groups.php';
-?>
+
+<?php print file_get_contents("http://www.groups.oslcarcadia.com/index.php"); ?>
+
 
     <?php
   include 'views/contact.php';
