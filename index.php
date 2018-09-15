@@ -5,6 +5,7 @@
 <script src="https://www.w3schools.com/lib/w3.js"></script>
  <head>
 
+
     <link style="width: 48px" rel="shortcut icon" type="image/x-icon" href="img/logo/full.svg" />
     
     <meta charset="utf-8">
@@ -34,10 +35,10 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
     <!-- slider -->
-    <!--   
+      
     <link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
     <script src="themes/1/js-image-slider.js" type="text/javascript"></script>
-    -->
+   
 
     <link href="css/js-image-slider.css" rel="stylesheet" type="text/css" />
     <script src="css/js-image-slider.js" type="text/javascript"></script>
@@ -48,16 +49,25 @@
     <!-- custom css -->
     <link href="css/custom.css?ver=1.1" rel="stylesheet" type="text/css">
    
+
+  <link rel="stylesheet" href="font/futura/stylesheet.css" type="text/css" charset="utf-8" />
+
+
+
   </head>
 
   <body id="page-top">
 
-<?php
+
+
+
+<?php 
   include 'views/menu.php';
 ?>
-<?php
+<?php 
   include 'views/frontline.php';
-?>
+ ?> 
+
 <?php
   //include 'views/slider.php';
 ?>
@@ -82,7 +92,7 @@
 
 <?php
   include 'views/missions.php';
-?>
+ ?>
 
 <div class="groups-margin-top bg-gray">
 <div class="container">
@@ -101,7 +111,7 @@
 
     <?php
   include 'views/contact.php';
-?>
+ ?>
 
 
     <!-- Pastor Grid -->

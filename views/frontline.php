@@ -34,7 +34,7 @@
                       <a class="btn-default portfolio-link" data-toggle="modal" href="#beliefs_pop">
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
-                            <h4 style="color:red">
+                            <h4 class="frontline-link">
                               Our Beliefs
                             </h4>
                           </div>
@@ -46,7 +46,7 @@
                       <a class="btn-default portfolio-link" data-toggle="modal" href="#staff_pop">
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
-                            <h4 style="color:red">
+                            <h4 class="frontline-link">
                               Our Staff
                             </h4>
                           </div>
@@ -58,7 +58,7 @@
                       <a class="btn-default portfolio-link" data-toggle="modal" href="#calendar_pop">
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
-                            <h4 style="color:red">
+                            <h4 class="frontline-link">
                               Church Calendar
                             </h4>
                           </div>
@@ -70,7 +70,7 @@
                       <a class="btn-default portfolio-link" data-toggle="modal" href="#youth_calendar_pop">
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
-                            <h4 style="color:red">
+                            <h4 class="frontline-link">
                               Youth Calendar
                             </h4>
                           </div>
@@ -82,7 +82,7 @@
                       <a class="btn-default portfolio-link" href="https://sermons.oslcarcadia.com">
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
-                            <h4 style="color:red">
+                            <h4 class="frontline-link">
                               Sermon Archive
                             </h4>
                           </div>
@@ -95,7 +95,7 @@
                       <a class="btn-default portfolio-link" data-toggle="modal" href="#prayer_pop">
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
-                            <h4 style="color:red">
+                            <h4 class="frontline-link">
                               Prayer Requests
                             </h4>
                           </div>
@@ -117,11 +117,8 @@
                        8:00AM Liturgical Service
                        </br>  
                        9:30AM 
-                       <a class="btn-default portfolio-link" data-toggle="modal" href="#class_pop">
-                       <div style="display: inline" class="portfolio-hover">
-                       <div style="display: inline; color: red" class="portfolio-hover-content">Sunday School
-                       </div>
-                       </div>
+                       <a class="frontline-link" style="font-weight: 700" data-toggle="modal" href="#class_pop">
+                       Sunday School
                        </a>(All ages)
                        </br>
                       10:45AM Liturgical Service
@@ -150,18 +147,18 @@
                       </div>
                     </div>
                     <div class="row">
-                      <a class="offset-2 col-8" data-toggle="modal" href="#directions_pop">Google Maps</a>
+                      <a class="offset-2 col-8 frontline-link" style="font-weight: 700" data-toggle="modal" href="#directions_pop">Google Maps</a>
                     </div>
 
                     <br/>
                     <h5>Contact:</h5>
                       
                     <div class="row">
-                      <a  class="offset-2 col-8" style="font-weight: 700" href="tel:+16264477690">626-447-7690</a>
+                      <a  class="offset-2 col-8 frontline-link" style="font-weight: 700" href="tel:+16264477690">626-447-7690</a>
                     </div>
 
                     <div class="row">
-                      <a  class="offset-2 col-8" style="font-weight: 700" href="mailto:oslcarcadia@aol.com">oslcarcadia@aol.com</a>
+                      <a  class="offset-2 col-8 frontline-link" style="font-weight: 700" href="mailto:oslcarcadia@aol.com">oslcarcadia@aol.com</a>
                     </div>
                   </div>
 

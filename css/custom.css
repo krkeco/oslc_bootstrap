@@ -3,12 +3,62 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
+
 @font-face {
-    font-family: 'Futura';
-    src:  url('font/futura light bt.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-          url('font/futura light bt.ttf') format('truetype')
+    font-family: 'futura_md_btmedium';
+    src: url('../font/futura/futura_medium_bt-webfont.woff2') format('woff2'),
+         url('../font/futura/futura_medium_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
+.menu-font{
+  color:white; 
+  margin-left: 20px;
+  font-size: 30px;
+  font-family: futura_md_btmedium;
+}
+
+.frontline-title{
+  text-transform: uppercase;
+  margin-top: 2em;
+  color: white;
+  font-size: 5em;
+  line-height: 1;
+  font-family: futura_md_btmedium; 
+}
+
+.frontline-link{
+  color: black;
+}
+
+.white-font{
+  color: white;
+}
+
+.transbox {
+  padding-top: 2em;
+  margin: .5em;
+  margin-bottom: 10em;
+  height: 23em;
+  box-shadow: 0 10px 0 #888;
+  background-color: #eee;
+  opacity: 0.95;
+  filter: alpha(opacity=95); /* For IE8 and earlier */
+
+}
+
+/*
+div.transbox h2 {
+  padding-bottom: 1em;
+}
+
+div.transbox p {
+  font-weight: bold;
+  color: #000000;
+}
+*/
 
  .paralax{
     /* The image used */
@@ -193,6 +243,13 @@
 
   height:230px;
 }
+.mission-image{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
 
 .bg-sanctuary{
   background-image: url("../img/sanctuary_light.png"); 
@@ -213,8 +270,7 @@ h4:hover{
   color:red;
 }
 .open-sans{
-  font-family: 'Futura', Fallback, sans-serif; 
-  font-weight: 500;
+  font-family: 'futura_md_btmedium', Fallback, sans-serif; 
 }
 .bg-red{
   color: white;
@@ -222,12 +278,12 @@ h4:hover{
 }
 
 .bg-brown {
-  color: white;
+  color: #626F82;
   background-color: #301c00 !important; 
 }
-.bg-new {
-  color: white;
-  background-color: #0f1114 !important; 
+.bg-missions {
+  color: black;
+  background-color: #fff !important; 
 }
 .bg-height{
   height: 100em;
@@ -264,7 +320,8 @@ h4:hover{
       -moz-transition: all ease 0.5s;
       transition: all ease 0.5s;
       opacity: 0;
-      background: rgba(81, 81, 81, 0.9); }
+      background: rgba(81, 81, 81, 0.9);
+       }
       #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
         opacity: 1; }
 
@@ -295,7 +352,7 @@ h4:hover{
       font-size: 16px;
       font-style: italic;
       margin: 0;
-     font-family: 'Futura', Fallback, sans-serif; 
+     font-family: 'futura_md_btmedium', Fallback, sans-serif; 
    }
 
 #portfolio * {
@@ -322,7 +379,7 @@ h4:hover{
       font-size: 16px;
       font-style: italic;
       margin: 20px 0 30px;
-      font-family: 'Futura', Fallback, sans-serif; 
+      font-family: 'futura_md_btmedium', Fallback, sans-serif; 
       }
     .portfolio-modal .modal-content ul.list-inline {
       margin-top: 0;
@@ -443,7 +500,7 @@ h4:hover{
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'Futura', Fallback, sans-serif; 
+  font-family: 'futura_md_btmedium', Fallback, sans-serif; 
   }
 
 .button-xl {
@@ -509,36 +566,6 @@ h4:hover{
 
 
 
-.frontline-title{
-  margin-top: 2em;
-  color: white;
-  font-size: 6em;
-  line-height: 1;
-  font-family: 'Futura', Fallback, sans-serif; 
-}
-
-.transbox {
-  padding-top: 2em;
-  margin: .5em;
-  margin-bottom: 10em;
-  height: 23em;
-  box-shadow: 0 10px 0 #888;
-  background-color: #eee;
-  opacity: 0.95;
-  filter: alpha(opacity=95); /* For IE8 and earlier */
-}
-
-/*
-div.transbox h2 {
-  padding-bottom: 1em;
-}
-
-div.transbox p {
-  font-weight: bold;
-  color: #000000;
-}
-*/
-
 
 header.masterhead {
   position: relative;
@@ -592,3 +619,67 @@ header.masterhead {
             max-width: 80%;
             margin-right: auto;
             margin-left: auto; } }
+
+#mainNavs {
+  border-color: rgba(34, 34, 34, 0.05);
+  background-color: white;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
+  #mainNavs .navbar-brand {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+    #mainNavs .navbar-brand:focus, #mainNavs .navbar-brand:hover {
+      color: #fff; }
+  #mainNavs .navbar-toggle {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff; }
+  #mainNavs .navbar-nav > li.nav-item > a.nav-link:focus,
+  #mainNavs .navbar-nav > li.nav-item > a.nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff; }
+    #mainNavs .navbar-nav > li.nav-item > a.nav-link:focus:hover,
+    #mainNavs .navbar-nav > li.nav-item > a.nav-link:hover {
+      color: #fff; }
+    #mainNavs .navbar-nav > li.nav-item > a.nav-link:focus.active,
+    #mainNavs .navbar-nav > li.nav-item > a.nav-link.active {
+      color: #fff !important;
+      background-color: transparent; }
+      #mainNavs .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
+      #mainNavs .navbar-nav > li.nav-item > a.nav-link.active:hover {
+        background-color: transparent; }
+  @media (min-width: 992px) {
+    #mainNavs {
+      border-color: rgba(255, 255, 255, 0.3);
+      background-color: transparent; }
+      #mainNavs .navbar-brand {
+        color: rgba(255, 255, 255, 0.7); }
+        #mainNavs .navbar-brand:focus, #mainNavs .navbar-brand:hover {
+          color: white; }
+      #mainNavs .navbar-nav > li.nav-item > a.nav-link,
+      #mainNavs .navbar-nav > li.nav-item > a.nav-link:focus {
+        color: rgba(255, 255, 255, 0.7); }
+        #mainNavs .navbar-nav > li.nav-item > a.nav-link:hover,
+        #mainNavs .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+          color: white; }
+      #mainNavs.navbar-shrink {
+        border-color: rgba(34, 34, 34, 0.05);
+        background-color: white; }
+        #mainNavs.navbar-shrink .navbar-brand {
+          font-size: 18px;
+          color: #fff; }
+          #mainNavs.navbar-shrink .navbar-brand:focus, #mainNavs.navbar-shrink .navbar-brand:hover {
+            color: #fff; }
+        #mainNavs.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+        #mainNavs.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+          color: #fff; }
+          #mainNavs.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+          #mainNavs.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+            color: #fff; } }

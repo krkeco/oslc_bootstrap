@@ -1,6 +1,7 @@
 
-    <section class="bg-new"  id="portfolio">
+    <section class="bg-missions"  id="portfolio">
     <section id="missions"/>
+
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -17,9 +18,9 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid d-block mx-auto" src="img/missions/terhune_7_4.jpg" alt="">
+              <img class="img-fluid d-block mx-auto mission-image" src="img/missions/terhune_7_4.jpg" alt="">
             </a>
-            <div class="portfolio-caption bg-dark">
+            <div class="portfolio-caption">
               <h4>The Terhunes</h4>
               <p class="text-muted">Papua New Guinea</p>
             </div>
@@ -32,9 +33,9 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid d-block mx-auto" src="img/missions/homeless_7_4.jpg" alt="">
+              <img class="img-fluid d-block mx-auto mission-image" src="img/missions/homeless_7_4.jpg" alt="">
             </a>
-            <div class="portfolio-caption bg-dark">
+            <div class="portfolio-caption">
               <h4>Homeless</h4>
               <p class="text-muted">Azusa Wash</p>
             </div>
@@ -47,9 +48,9 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid d-block mx-auto" src="img/fellowships/unionstation.jpg" alt="">
+              <img class="img-fluid d-block mx-auto mission-image" src="img/fellowships/unionstation.jpg" alt="">
             </a>
-            <div class="portfolio-caption bg-dark">
+            <div class="portfolio-caption">
               <h4>Union Station</h4>
               <p class="text-muted">Pasadena</p>
             </div>

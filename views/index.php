@@ -27,8 +27,8 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <!-- <link href="css/creative.min.css" rel="stylesheet"> -->
-    <link href="css/newcreative.css" rel="stylesheet">
+    <link href="css/creative.min.css" rel="stylesheet">
+    <!-- <link href="css/newcreative.css" rel="stylesheet"> -->
 
 
     <!-- reCaptcha for google -->
