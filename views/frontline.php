@@ -43,7 +43,7 @@
                     </div>
 
                     <div>
-                      <a class="btn-default portfolio-link" data-toggle="modal" href="#staff_pop">
+                      <a class="portfolio-link mr-auto text-center" data-toggle="modal" href="#leadership_pop">
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
                             <h4 class="frontline-link">

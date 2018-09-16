@@ -29,6 +29,9 @@
     font-style: normal;
 
 }
+.bg-groups{
+  background-color: #888B9E !important;
+}
 .menu-font{
   color:white; 
   margin-left: 20px;
@@ -75,6 +78,21 @@ div.transbox p {
   color: #000000;
 }
 */
+.contact-title{
+  font-size: 28px;
+  font-weight: 300;
+  font-family: futura_md_btmedium;
+  padding-bottom: 10px;
+
+}
+.contact-info{
+  padding-top:15px;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  font-family: raleway;
+
+}
 .fellowship-header{
   
   font-size: 48px;

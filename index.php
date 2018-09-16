@@ -78,9 +78,11 @@
 <?php
   include 'views/youthfamily_modals.php';
 ?>
-<?php
+
+<!-- <?php
   include 'views/group_modals.php';
 ?>
+ -->
 <?php
   include 'views/contact_modals.php';
 ?>
@@ -94,7 +96,7 @@
   include 'views/missions.php';
  ?>
 
-<div class=" bg-gray" id="groups">
+<div class="bg-groups" id="groups">
     
 <h2 class="fellowship-header text-uppercase">Join a Fellowship today!</h2>
 </div>
