@@ -75,6 +75,15 @@ div.transbox p {
   color: #000000;
 }
 */
+.fellowship-header{
+  
+  font-size: 48px;
+  padding-top: 100px;
+  color: white;
+  font-family: futura_md_btmedium;
+  text-align: center;
+}
+
 .mission-header{
   font-size: 72px;
   color: #626F82;
@@ -316,7 +325,6 @@ h4:hover{
 }
 
 .bg-gray {
-  color: white;
   background-color: #626F82 !important;
   }
 

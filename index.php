@@ -94,16 +94,11 @@
   include 'views/missions.php';
  ?>
 
-<div class="groups-margin-top bg-gray">
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <h2 class="section-heading text-uppercase">Fellowships</h2>
-      <h3 class="section-subheading text-muted">Get plugged in!</h3>
-    </div>
-  </div>
-  </div>
+<div class=" bg-gray" id="groups">
+    
+<h2 class="fellowship-header text-uppercase">Join a Fellowship today!</h2>
 </div>
+      
 
 
 <?php print file_get_contents("http://www.groups.oslcarcadia.com/index.php"); ?>
