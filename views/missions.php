@@ -5,54 +5,60 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Missions</h2>
-            <h3 class="section-subheading text-muted">Check out some of our missions</h3>
+            <h2 class="mission-header text-uppercase">Missions</h2>
+            <h3 class="mission-subheader text-muted">Check out some of our missions</h3>
           </div>
         </div>
         <div class="row">
 
-          <div class="col-md-4 col-sm-12 portfolio-item portfolio-long">
-            <a class="portfolio-link portfolio-long" href="http://toalltribes.com/" >
+          <div class="col-md-4 col-sm-12 portfolio-item">
+
+            <a class="portfolio-link" href="http://toalltribes.com/" >
+
               <div class="portfolio-hover portfolio-long">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid d-block mx-auto mission-image" src="img/missions/terhune_7_4.jpg" alt="">
+
+              <img class="img-fluid d-block mx-auto mission-image" src="img/missions/terhune_square.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>The Terhunes</h4>
-              <p class="text-muted">Papua New Guinea</p>
+              <div class="mission-name">The Terhunes</div>
+              <div class="mission-name-subtitle">Papua New Guinea</div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 portfolio-item ">
+            <a class="portfolio-link " data-toggle="modal" href="#homeless_pop">
+
+              <div class="portfolio-hover portfolio-long">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid d-block mx-auto mission-image" src="img/missions/homeless.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <div class="mission-name">Homeless</div>
+              <div class="mission-name-subtitle">Azusa Wash</div>
             </div>
           </div>
 
           <div class="col-md-4 col-sm-12 portfolio-item portfolio-long">
-            <a class="portfolio-link portfolio-long" data-toggle="modal" href="#homeless_pop">
-              <div class="portfolio-hover portfolio-long">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid d-block mx-auto mission-image" src="img/missions/homeless_7_4.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Homeless</h4>
-              <p class="text-muted">Azusa Wash</p>
-            </div>
-          </div>
+            <a class="portfolio-link " data-toggle="modal" href="#portfolioModal9">
 
-          <div class="col-md-4 col-sm-12 portfolio-item portfolio-long">
-            <a class="portfolio-link portfolio-long" data-toggle="modal" href="#portfolioModal9">
               <div class="portfolio-hover portfolio-long">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
+
               <img class="img-fluid d-block mx-auto mission-image" src="img/fellowships/unionstation.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Union Station</h4>
-              <p class="text-muted">Pasadena</p>
+              <div class="mission-name">Union Station</div>
+              <div class="mission-name-subtitle">Pasadena</div>
             </div>
           </div>
 
