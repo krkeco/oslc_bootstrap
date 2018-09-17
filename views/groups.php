@@ -2,140 +2,141 @@
 
     <!-- Groups Grid -->
 
-    <section  id="portfolio">
-    <section class="bg-gray bg-height" id="groups"/>
+    
+    <section class="bg-groups">
+    
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Fellowships</h2>
-            <h3 class="section-subheading text-muted">Get plugged in!</h3>
-          </div>
-        </div>
+       
         <div class="row">
 
-          <div class="col-lg-3 col-md-4 col-sm-6 col-6 portfolio-item portfolio-short">
-            <a class="portfolio-link portfolio-short" data-toggle="modal" href="#mens_pop">
-              <div class="portfolio-hover rounded-border portfolio-short">
-                <div class="portfolio-hover-content rounded-border">
-              <h4>Men's Network</h4>
-              <p >Saturday</p>
-                </div>
+
+          <div class="offset-lg-1 col-lg-2 col-md-3 col-sm-3 col-4 ">
+            <a class="portfolio-link"  data-toggle="modal" href="#mens_pop">
+             
+              <img class="rounded-border port-image " src="img/fellowships/engineer.png" alt="">
+             
+              <div class="title">
+                Men's Network
               </div>
-              <img class="img-fluid rounded-border" src="img/fellowships/engineer.png" alt="">
+                <div class="subtitle">
+                Saturday
+              </div>
+
             </a>
           </div>
           
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 portfolio-item portfolio-short">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-4">
               <a class="portfolio-link portfolio-short" data-toggle="modal" href="#group4">
-                <div class="portfolio-hover rounded-border portfolio-short">
-                  <div class="portfolio-hover-content rounded-border">
-                <h4>Choir/Bells</h4>
-                <p >Thursdays</p>
-                  </div>
-                </div>
-                <img class="img-fluid rounded-border" src="img/fellowships/gospel.png" alt="">
+                <img class="port-image img-fluid rounded-border" src="img/fellowships/gospel.png" alt="">
+               <div class="title">
+               Choir/Bells
+               </div>
+                 <div class="subtitle">
+                 Thursdays</div>
+               
               </a>
             </div>
 
-          <div class="col-lg-3 col-md-4 col-sm-6 col-6 portfolio-item portfolio-short">
+          <div class="col-lg-2 col-md-3 col-sm-3 col-4 ">
             <a class="portfolio-link portfolio-short" data-toggle="modal" href="#group3">
-              <div class="portfolio-hover rounded-border portfolio-short">
-                <div class="portfolio-hover-content rounded-border">
-              <h4>Music Academy</h4>
-              <p >Mondays</p>
-                </div>
-              </div>
-              <img class="img-fluid rounded-border" src="img/fellowships/spanish-guitar-and-keyboard.png" alt="">
+              <img class="port-image img-fluid rounded-border" src="img/fellowships/spanish-guitar-and-keyboard.png" alt="">
+             <div class="title">
+             Music Academy
+             </div>
+               <div class="subtitle">
+               Mondays</div>
+             
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-sm-6 col-6 portfolio-item portfolio-short">
+          <div class="col-lg-2 col-md-3 col-sm-3 col-4 ">
             <a class="portfolio-link portfolio-short" data-toggle="modal" href="#drama">
-              <div class="portfolio-hover rounded-border portfolio-short">
-                <div class="portfolio-hover-content rounded-border">
-              <h4>Drama Club</h4>
-              <p >Mondays</p>
-                </div>
-              </div>
-              <img class="img-fluid rounded-border" src="img/fellowships/mask.png" alt="">
+              <img class="port-image img-fluid rounded-border" src="img/fellowships/mask.png" alt="">
+             <div class="title">
+             Drama Club
+             </div>
+               <div class="subtitle">
+               Mondays</div>
+             
             </a>
           </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 portfolio-item portfolio-short">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-4 ">
               <a class="portfolio-link portfolio-short" data-toggle="modal" href="#group1">
-                <div class="portfolio-hover rounded-border portfolio-short">
-                  <div class="portfolio-hover-content rounded-border">
-                    <h4>Movie Night</h4>
-                    <p>Saturdays</p>
-                  </div>
-                </div>
+                <img class="port-image img-fluid rounded-border" src="img/fellowships/popcorn-box.png" alt="">
                 
-                <img class="img-fluid rounded-border" src="img/fellowships/popcorn-box.png" alt="">
+               <div class="title">
+               Movie Night
+               </div>
+                     <div class="subtitle">
+                     Saturdays</div>
+               
               </a>
             </div>
-<script>
 
-  function openScoutSite() {
-      window.open("http://troop126arcadia.com/");
-  }
-  </script>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-6 portfolio-item portfolio-short">
+          <script>
+            function openScoutSite() {
+              window.open("http://troop126arcadia.com/");
+            }
+          </script>
+
+          <div class="offset-lg-1 col-lg-2 col-md-3 col-sm-3 col-4 ">
             <a class="portfolio-link portfolio-short" data-toggle="modal" onClick="openScoutSite()">
-              <div class="portfolio-hover rounded-border portfolio-short">
-                <div class="portfolio-hover-content rounded-border">
-              <h4>Boy Scouts</h4>
-              <p >Sundays</p>
-                </div>
-              </div>
-              <img class="img-fluid rounded-border" src="img/fellowships/boyscout.png" alt="">
+              <img class="port-image img-fluid rounded-border" src="img/fellowships/boyscout.png" alt="">
+             <div class="title">
+             Boy Scouts
+             </div>
+               <div class="subtitle">
+               Sundays</div>
+             
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-sm-6 col-6 portfolio-item portfolio-short">
+          <div class="col-lg-2 col-md-3 col-sm-3 col-4 ">
             <a class="portfolio-link portfolio-short" data-toggle="modal" href="#group7">
-              <div class="portfolio-hover rounded-border portfolio-short">
-                <div class="portfolio-hover-content rounded-border">
-              <h4>Sewing Club</h4>
-              <p >Monthly</p>
-                </div>
-              </div>
-              <img class="img-fluid rounded-border" src="img/fellowships/sewing-machine.png" alt="">
+              <img class="port-image img-fluid rounded-border" src="img/fellowships/sewing-machine.png" alt="">
+             <div class="title">
+             Sewing Club
+             </div>
+               <div class="subtitle">
+               Monthly</div>
+             
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-sm-6 col-6 portfolio-item portfolio-short">
+          <div class="col-lg-2 col-md-3 col-sm-3 col-4 ">
             <a class="portfolio-link portfolio-short" data-toggle="modal" href="#group6">
-              <div class="portfolio-hover rounded-border portfolio-short">
-                <div class="portfolio-hover-content rounded-border">
-              <h4>Stamp Club</h4>
-              <p >Bi-Monthly</p>
-                </div>
-              </div>
-              <img class="img-fluid rounded-border" src="img/fellowships/stamp.png" alt="">
+              <img class="port-image img-fluid rounded-border" src="img/fellowships/stamp.png" alt="">
+             <div class="title">
+             Stamp Club
+             </div>
+               <div class="subtitle">
+               Bi-Monthly</div>
+             
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-sm-6 col-6 portfolio-item portfolio-short">
+          <div class="col-lg-2 offset-lg-0 col-md-3 offset-sm-3 col-sm-3 col-4 ">
             <a class="portfolio-link portfolio-short" data-toggle="modal" href="#lwml_pop">
-              <div class="portfolio-hover rounded-border portfolio-short">
-                <div class="portfolio-hover-content rounded-border">
-              <h4>L.W.M.L</h4>
-              <p >Monthly</p>
-                </div>
-              </div>
-              <img class="img-fluid rounded-border" src="img/fellowships/lwml.png" alt="">
+              <img class="port-image img-fluid rounded-border" src="img/fellowships/lwml.png" alt="">
+             <div class="title">
+             L.W.M.L
+             </div>
+               <div class="subtitle">
+               Monthly</div>
+             
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-sm-6 col-6 portfolio-item portfolio-short">
+          <div class="col-lg-2 offset-sm-0 offset-4 col-md-3 col-sm-3 col-4 ">
             <a class="portfolio-link portfolio-short" data-toggle="modal" href="#group8">
-              <div class="portfolio-hover rounded-border portfolio-short">
-                <div class="portfolio-hover-content rounded-border">
-              <h4>Support Group</h4>
-              <p >Sundays</p>
-                </div>
-              </div>
-              <img class="img-fluid rounded-border" src="img/fellowships/heart-in-hands.png" alt="">
+              <img class="port-image img-fluid rounded-border" src="img/fellowships/heart-in-hands.png" alt="">
+             <div class="title">
+             Support Group
+             </div>
+               <div class="subtitle">
+               Sundays</div>
+             
             </a>
           </div>
 

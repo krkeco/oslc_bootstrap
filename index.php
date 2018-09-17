@@ -79,18 +79,18 @@
   include 'views/youthfamily_modals.php';
 ?>
 
-<!-- <?php
+<?php
   include 'views/group_modals.php';
 ?>
- -->
+ 
 <?php
   include 'views/contact_modals.php';
 ?>
-<!-- 
+
 
 <?php
   include 'views/youthfamily.php';
-?>      -->
+?>    
 
 <?php
   include 'views/missions.php';
@@ -99,11 +99,17 @@
 <div class="bg-groups" id="groups">
     
 <h2 class="fellowship-header text-uppercase">Join a Fellowship today!</h2>
+
+
+<?php 
+//  include 'views/groups_subpage/index.php';
+// readfile('http://www.groups.oslcarcadia.com/'); 
+print file_get_contents("http://www.groups.oslcarcadia.com/"); 
+?>
 </div>
       
 
 
-<?php print file_get_contents("http://www.groups.oslcarcadia.com/index.php"); ?>
 
 
     <?php

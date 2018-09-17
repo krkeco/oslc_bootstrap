@@ -32,6 +32,37 @@
 .bg-groups{
   background-color: #888B9E !important;
 }
+
+.port-image{
+  
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.title{
+
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: futura_md_btmedium;
+}
+.subtitle{
+
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: raleway;
+  padding-bottom: 50px;
+}
+
 .menu-font{
   color:white; 
   margin-left: 20px;
@@ -78,6 +109,37 @@ div.transbox p {
   color: #000000;
 }
 */
+.family-title{
+  font-size: 72px;
+  font-weight: 300;
+  color: #626F82;
+  font-family: futura_md_btmedium;
+  
+
+}
+.family-image{
+  height: 48px;
+  width: 48px;
+
+}
+.family-intro{
+  font-size: 18px;
+  font-weight: 600;
+  color: #626F82;
+  font-family: raleway;
+  margin-bottom: 40px;
+  
+
+}
+.family-subtitle{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #626F82;
+  font-family: futura_md_btmedium;
+}
+
 .contact-title{
   font-size: 28px;
   font-weight: 300;
@@ -96,6 +158,7 @@ div.transbox p {
 .fellowship-header{
   
   font-size: 48px;
+  margin-bottom: -20px;
   padding-top: 100px;
   color: white;
   font-family: futura_md_btmedium;
@@ -287,9 +350,9 @@ div.transbox p {
                 }
 
 
-.rounded-border{
+.rounded-borde{
   border-radius: 15px;
-  margin: 1px;
+  margin-top: 5px;
 }
 
 .mission-box{

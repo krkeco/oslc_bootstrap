@@ -54,7 +54,7 @@
                 </div>
               </div>
 
-              <img class="img-fluid d-block mx-auto mission-image" src="img/fellowships/unionstation.jpg" alt="">
+              <img class="img-fluid d-block mx-auto mission-image" src="img/missions/unionstation.jpg" alt="">
             </a>
             <div class="portfolio-caption">
               <div class="mission-name">Union Station</div>
