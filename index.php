@@ -48,7 +48,7 @@
 
     <!-- custom css -->
     <link href="css/custom.css?ver=1.1" rel="stylesheet" type="text/css">
-    <script src="js/custom.js" type="text/javascript"></script>
+    
    
 
   <link rel="stylesheet" href="font/futura/stylesheet.css" type="text/css" charset="utf-8" />
@@ -269,8 +269,6 @@ print file_get_contents("http://www.groups.oslcarcadia.com/");
 
 
 
-
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -281,7 +279,12 @@ print file_get_contents("http://www.groups.oslcarcadia.com/");
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+    <script src="js/creative.min.js" ></script>
+
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+
+
 
 
   </body>

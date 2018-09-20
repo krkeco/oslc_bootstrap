@@ -378,8 +378,10 @@ Jenny, Jamie, (cameo: Allison, and KC)</p>
                   </br>
 
                   <h3>Direct Donations:</h3>
+<!-- 
+<a class="btn btn-success" href="http://localhost/Workspace/oslc/OSLCCreativeBootStrap/amazonpay/ExpressPayment.php" target="_blank">Donate with Amazon</a> -->
 
-<a class="btn btn-success" href="http://localhost/Workspace/oslc/OSLCCreativeBootStrap/amazonpay/ExpressPayment.php" target="_blank">Donate with Amazon</a>
+                
 
                   </br>
                   </br>

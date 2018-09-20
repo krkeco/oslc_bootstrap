@@ -7,29 +7,34 @@
           <div class="col-12 col-md-6">
           
             <div class="row contact-title">
-              Get in Touch
+              <div class="col-12">
+                Get in Touch
+              </div>
             </div>
 
             <a class="row contact-info" href="tel:+16264477690">
-                <div>626-447-7690</div>
+                <div class="col-12">626-447-7690</div>
             </a>
           
           
 
             <a class="row contact-info" data-toggle="modal" href="#directions_pop">
-              <div>Directions</div>
+              <div class="col-12">Directions</div>
             </a>
 
 
             <a class="row contact-info" href="mailto: oslcarcadia@aol.com">
-              <div>oslcarcadia@aol.com</div>
+              <div class="col-12">oslcarcadia@aol.com</div>
             </a>
+            </br>
 
           </div>
 
           <div class="col-12 col-md-6">
             <div class="row contact-title">
-              Office hours
+              <div class="col-12">
+                Office hours
+              </div>
             </div>
               
             <div class="row contact-info">
@@ -52,8 +57,16 @@
               
 
 
-            <a class="row contact-info" data-toggle="modal" href="#giving_pop">
-                    <div class="col-12">Giving</div>
+            <!-- <a class="row contact-info" data-toggle="modal" href="#giving_pop"> -->
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick">
+  <input type="hidden" name="hosted_button_id" value="777P4Z3QTEVDY">
+  <input type="image" src="" border="0" name="submit" alt="Giving " class="contact-info"> 
+
+  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+  </form>
+                    <div class="col-12"></div>
             </a>
 
           </div>

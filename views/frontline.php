@@ -162,14 +162,15 @@
                       Address:
                       
                       </br>
-                      512 W Duarte Rd., Arcadia, CA 91007
+                      <a  style="font-weight: 700" data-toggle="modal" href="#directions_pop">
+                      512 W Duarte Rd., 
+                      </br>
+                      Arcadia, CA 91007
+                      </a>
                       
                       </br>
+                      <br/>
                       
-                      <a  style="font-weight: 700" data-toggle="modal" href="#directions_pop">Google Maps</a>
-                    
-                      <br/>
-                      <br/>
                       Contact:
                       </br>
                   

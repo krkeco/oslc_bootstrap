@@ -63,6 +63,19 @@
   padding-bottom: 50px;
 }
 
+
+.menu-bar{
+  margin-top: 72px; 
+  top: 0; 
+  right: 0; 
+  position: absolute;
+}
+@media(min-width: 992px){
+  .menu-bar{
+  margin-top: 12px; 
+  }
+}
+
 .menu-font{
   color:white; 
   margin-left: 20px;
@@ -247,32 +260,60 @@ div.transbox a {
 }
 .contact-info{
   padding-top:15px;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   font-weight: 500;
   font-family: raleway;
 
 }
+@media(min-width: 768px){
+
+  .contact-info{
+    font-size: 15px;
+  }
+}
+@media(min-width: 992px){
+
+  .contact-info{
+    font-size: 20px;
+  }
+}
 .fellowship-header{
   
-  font-size: 48px;
+  font-size: 24px;
   margin-bottom: -20px;
   padding-top: 100px;
   color: white;
   font-family: futura_md_btmedium;
   text-align: center;
 }
+@media(min-width: 768px){
+  .fellowship-header{
+    font-size: 48px;
+  }
+}
 .mission-header{
+  margin-top: -50px;
   font-size: 72px;
   color: #626F82;
 }
 .mission-subheader{
   font-size: 20px;
+  margin-bottom: 0px;
   font-family: ralewaythin;
   font-weight: 700;
   color: #626F82;
   padding-bottom: 100px;
 
+}
+@media(min-width: 768px){
+  .mission-header{
+    margin-top: 0px;
+  }
+  .mission-subheader{
+    margin-bottom: 0px;
+
+  }
 }
 .mission-name{
   font-size: 24px;
@@ -855,20 +896,22 @@ header.masterhead {
     text-transform: uppercase;
     color: #fff; }
     #mainNav .navbar-nav {
-       align-items: flex-end; 
+      background-color: #626F82;
+      align-items: flex-end; 
+
       }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    width: 200px;
-    background-color: #626F82;
-
+    width: 150px;
+      margin-right: 10px;
+      padding-left: 10px;
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     color: #fff; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-      background-color: #626F82;
+      
       color: #999; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
@@ -876,7 +919,7 @@ header.masterhead {
       }
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-      background-color: #626F82;
+      
     }
 
     /*browsers*/
@@ -890,6 +933,7 @@ header.masterhead {
           color: #999; }
       #mainNav .navbar-nav {
 
+      background-color: transparent;
       }
       #mainNav .navbar-nav > li.nav-item > a.nav-link,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus { 

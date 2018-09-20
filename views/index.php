@@ -48,6 +48,7 @@
 
     <!-- custom css -->
     <link href="css/custom.css?ver=1.1" rel="stylesheet" type="text/css">
+    <script src="js/custom.js" type="text/javascript"></script>
    
   </head>
 
