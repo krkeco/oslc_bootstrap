@@ -41,11 +41,11 @@
             </a>
             <div class="portfolio-caption">
               <div class="mission-name">Homeless</div>
-              <div class="mission-name-subtitle">Azusa Wash</div>
+              <div class="mission-name-subtitle">Azusa</div>
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-12 portfolio-item portfolio-long">
+          <div class="col-md-4 col-sm-12 portfolio-item">
             <a class="portfolio-link " data-toggle="modal" href="#portfolioModal9">
 
               <div class="portfolio-hover portfolio-long">

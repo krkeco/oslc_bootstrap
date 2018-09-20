@@ -70,45 +70,143 @@
   font-family: futura_md_btmedium;
 }
 
-.frontline-title{
-  text-transform: uppercase;
-  margin-top: 2em;
+
+.frontline-header{
+  padding: 0px;
+  padding-top: 10vh;
+  font-family: futura_md_btmedium;
+  background-image: url("../img/header.jpg");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: white;
-  font-size: 5em;
+  height: 95vh;
+  width: 100vw;
+}
+.frontline-title{
+
+  text-transform: uppercase;
+  color: white;
   line-height: 1;
   font-family: futura_md_btmedium; 
+  
+  padding-top: 5vh;
+  font-size: 2em;
+
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+@media (min-width: 768px) {
+  .frontline-title {
+  
+  font-size: 4em;
+  padding-top: 28vh;
+  text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  }
+}
+@media (min-width: 992px) {
+  .frontline-title {
+    font-size: 4.5em;
+  padding-top: 26vh;
+  }
 }
 
+
+
 .frontline-link{
-  color: black;
+  color: #626F82;
+  line-height: 1.2;
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: raleway; 
+
+}
+
+@media(min-width: 768px) {
+  .frontline-link{
+    font-size: 1.2em;
+  
+  }
+}
+@media(min-width: 992px) {
+  .frontline-link{
+    font-size: 1.4em;
+  
+  }
 }
 
 .white-font{
   color: white;
 }
 
+.tbox-top{
+  
+  margin-top: -200px;
+  opacity: 0.65;
+  filter: alpha(opacity=65); /* For IE8 and earlier */
+
+}
+.tbox-bot{
+  
+  margin-bottom: -300px;
+}
+
 .transbox {
+  color: #626F82;
+  line-height: 1;
+  font-family: futura_md_btmedium; 
+  font-weight: 600;
+  text-align: center;
+
   padding-top: 2em;
-  margin: .5em;
+  
+
   margin-bottom: 10em;
-  height: 23em;
   box-shadow: 0 10px 0 #888;
   background-color: #eee;
   opacity: 0.95;
   filter: alpha(opacity=95); /* For IE8 and earlier */
+  
+  margin-top: -15vw;
+  padding-bottom: 5vw;
+
+  font-size: 1em;
 
 }
+@media(min-width: 768px) {
+  .transbox{
+    height: 23em;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    
+  }
 
-/*
+  .tbox-top{
+  opacity: 0.95;
+  filter: alpha(opacity=95); /* For IE8 and earlier */
+    
+  margin-top: 0vw;
+  }
+
+  .tbox-bot{
+    
+  margin-bottom: 0vw;
+  }
+}
+
 div.transbox h2 {
   padding-bottom: 1em;
 }
 
-div.transbox p {
-  font-weight: bold;
-  color: #000000;
+
+div.transbox a {
+  color: #626F82;
 }
-*/
+
 .family-title{
   font-size: 72px;
   font-weight: 300;
@@ -164,7 +262,6 @@ div.transbox p {
   font-family: futura_md_btmedium;
   text-align: center;
 }
-
 .mission-header{
   font-size: 72px;
   color: #626F82;
@@ -397,9 +494,9 @@ h4:hover{
   color: #626F82;
   background-color: #301c00 !important; 
 }
-.bg-missions {
-  color: black;
-  background-color: #fff !important; 
+.bg-frontline {
+  color: white;
+  background-color: blue !important; 
 }
 .bg-height{
   height: 100em;
@@ -738,66 +835,89 @@ header.masterhead {
             margin-right: auto;
             margin-left: auto; } }
 
-#mainNavs {
-  border-color: rgba(34, 34, 34, 0.05);
-  background-color: white;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+#mainNav {
+  border-color: rgba(34, 34, 34, 0.95);
+  background-color: #626F82;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
-  transition: all 0.2s; }
-  #mainNavs .navbar-brand {
+  transition: all 0.2s;
+     }
+  #mainNav .navbar-brand {
     font-weight: 500;
+    background-color: #626F82;
     text-transform: uppercase;
-    color: #fff;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
-    #mainNavs .navbar-brand:focus, #mainNavs .navbar-brand:hover {
-      color: #fff; }
-  #mainNavs .navbar-toggle {
+    color: #fff; }
+    #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+      color: #999; }
+  #mainNav .navbar-toggle {
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     color: #fff; }
-  #mainNavs .navbar-nav > li.nav-item > a.nav-link:focus,
-  #mainNavs .navbar-nav > li.nav-item > a.nav-link {
+    #mainNav .navbar-nav {
+       align-items: flex-end; 
+      }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    width: 200px;
+    background-color: #626F82;
+
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     color: #fff; }
-    #mainNavs .navbar-nav > li.nav-item > a.nav-link:focus:hover,
-    #mainNavs .navbar-nav > li.nav-item > a.nav-link:hover {
-      color: #fff; }
-    #mainNavs .navbar-nav > li.nav-item > a.nav-link:focus.active,
-    #mainNavs .navbar-nav > li.nav-item > a.nav-link.active {
-      color: #fff !important;
-      background-color: transparent; }
-      #mainNavs .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
-      #mainNavs .navbar-nav > li.nav-item > a.nav-link.active:hover {
-        background-color: transparent; }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
+      background-color: #626F82;
+      color: #999; }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+      outline:1px solid black;
+      }
+      #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
+      #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+      background-color: #626F82;
+    }
+
+    /*browsers*/
   @media (min-width: 992px) {
-    #mainNavs {
+    #mainNav {
       border-color: rgba(255, 255, 255, 0.3);
       background-color: transparent; }
-      #mainNavs .navbar-brand {
+      #mainNav .navbar-brand {
         color: rgba(255, 255, 255, 0.7); }
-        #mainNavs .navbar-brand:focus, #mainNavs .navbar-brand:hover {
-          color: white; }
-      #mainNavs .navbar-nav > li.nav-item > a.nav-link,
-      #mainNavs .navbar-nav > li.nav-item > a.nav-link:focus {
-        color: rgba(255, 255, 255, 0.7); }
-        #mainNavs .navbar-nav > li.nav-item > a.nav-link:hover,
-        #mainNavs .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-          color: white; }
-      #mainNavs.navbar-shrink {
+        #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+          color: #999; }
+      #mainNav .navbar-nav {
+
+      }
+      #mainNav .navbar-nav > li.nav-item > a.nav-link,
+      #mainNav .navbar-nav > li.nav-item > a.nav-link:focus { 
+          width: auto;
+          margin-left: 0px;
+          background-color: transparent;
+
+        color: #fff; }
+        #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+        #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover { 
+          width: auto;
+          margin-left: 0px;
+          background-color: transparent;
+          color: #999; }
+
+          /*this is after scroll 100 down page*/
+      #mainNav.navbar-shrink {
         border-color: rgba(34, 34, 34, 0.05);
-        background-color: white; }
-        #mainNavs.navbar-shrink .navbar-brand {
+        background-color: #626F82 !important; }
+        #mainNav.navbar-shrink .navbar-brand {
           font-size: 18px;
           color: #fff; }
-          #mainNavs.navbar-shrink .navbar-brand:focus, #mainNavs.navbar-shrink .navbar-brand:hover {
-            color: #fff; }
-        #mainNavs.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
-        #mainNavs.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-          color: #fff; }
-          #mainNavs.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
-          #mainNavs.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-            color: #fff; } }
+          #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+            color: #999; }
+        #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+        #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+          color: #fff;}
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+            color: #999; } 
+          }

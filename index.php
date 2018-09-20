@@ -48,6 +48,7 @@
 
     <!-- custom css -->
     <link href="css/custom.css?ver=1.1" rel="stylesheet" type="text/css">
+    <script src="js/custom.js" type="text/javascript"></script>
    
 
   <link rel="stylesheet" href="font/futura/stylesheet.css" type="text/css" charset="utf-8" />
@@ -70,6 +71,7 @@
 
 <?php
   //include 'views/slider.php';
+//
 ?>
   
 <?php
@@ -104,6 +106,8 @@
 <?php 
 //  include 'views/groups_subpage/index.php';
 // readfile('http://www.groups.oslcarcadia.com/'); 
+
+//this one
 print file_get_contents("http://www.groups.oslcarcadia.com/"); 
 ?>
 </div>

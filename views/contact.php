@@ -1,10 +1,10 @@
 
 
-    <section id="contact" class="bg-gray">
+    <section id="contact" class="bg-gray" style="margin-bottom:-30vh">
       <div class="container">
         <div class="row">
 
-          <div class="col-6">
+          <div class="col-12 col-md-6">
           
             <div class="row contact-title">
               Get in Touch
@@ -21,15 +21,15 @@
             </a>
 
 
-            <a class="row contact-info" href="mailto: http://oslcarcadia@aol.com">
+            <a class="row contact-info" href="mailto: oslcarcadia@aol.com">
               <div>oslcarcadia@aol.com</div>
             </a>
 
           </div>
 
-          <div class="col-6">
-            <div class="contact-title">
-              <strong>Office hours</strong>
+          <div class="col-12 col-md-6">
+            <div class="row contact-title">
+              Office hours
             </div>
               
             <div class="row contact-info">

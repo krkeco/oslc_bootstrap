@@ -5,11 +5,11 @@
       <div class="container"  style="padding-left: 0px; margin-left: 0px">
         <div class="row" >
           
-          <div class="col-6"  >
+          <div class="col-12 col-md-6"  >
               <img class="img-fluid d-block mx-auto" style="width: 100%; height: auto;top: 0; left: 0" src="img/yfm/family_image.jpg" alt="">
           </div>
 
-          <div class="col-6">
+          <div class="col-12 col-md-6">
 
 
 
@@ -23,7 +23,7 @@
 
             <div class="row">
 
-              <div class="col-md-3 col-sm-12 portfolio-item portfolio-short">
+              <div class="col-3 portfolio-item portfolio-short">
                 <!-- <a class="portfolio-link portfolio-short" data-toggle="modal" href="#children_pop"> -->
                   
                   <img class="img-fluid d-block mx-auto family-image" src="img/yfm/basketball.png" alt="">
@@ -34,7 +34,7 @@
               </div>
 
 
-              <div class="col-md-3 col-sm-12 portfolio-item portfolio-short">
+              <div class="col-3 portfolio-item portfolio-short">
                 <!-- <a class="portfolio-link portfolio-short" data-toggle="modal" href="#youth_pop"> -->
                   
                   <img class="img-fluid d-block mx-auto family-image" src="img/yfm/study.png" alt="">
@@ -44,7 +44,7 @@
                 <!-- </a> -->
               </div>
               
-              <div class="col-md-3 col-sm-12 portfolio-item portfolio-short">
+              <div class="col-3 portfolio-item portfolio-short">
                 <!-- <a class="portfolio-link portfolio-short" data-toggle="modal" href="#youth_pop"> -->
                  
                   <img class="img-fluid d-block mx-auto family-image" src="img/yfm/meeting.png" alt="">
@@ -55,7 +55,7 @@
               </div>
               
 
-              <div class="col-md-3 col-sm-12 portfolio-item portfolio-short">
+              <div class="col-3 portfolio-item portfolio-short">
                 <!-- <a class="portfolio-link portfolio-short" data-toggle="modal" href="#family_pop"> -->
                   
                   <img class="img-fluid d-block mx-auto family-image" src="img/yfm/family1.png" alt="">

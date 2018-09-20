@@ -1,8 +1,8 @@
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-gray"
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top "
       style="height: 72px;"
-      id="mainNavs">
+      id="mainNav">
       
 
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -15,9 +15,6 @@
         
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto white-font">
-        <!--   <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#events">Upcoming</a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger menu-font" style="" href="#about">About</a>
             </li>
