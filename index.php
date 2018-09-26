@@ -114,8 +114,6 @@ print file_get_contents("http://www.groups.oslcarcadia.com/");
       
 
 
-
-
     <?php
   include 'views/contact.php';
  ?>

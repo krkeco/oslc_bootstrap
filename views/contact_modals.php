@@ -491,6 +491,13 @@ Jenny, Jamie, (cameo: Allison, and KC)</p>
               <div class="col-lg-12 mx-auto">
                 <div class="modal-body">
 
+
+      <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="mission-header text-uppercase">Leadership</h2>
+            <h3 class="mission-subheader">Meet our Pastors</h3>
+          </div>
+        </div>
    <!--  <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">

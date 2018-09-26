@@ -56,91 +56,119 @@
 
     <section id="contact" >
       <div class="container" style="text-align: center">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="mission-header text-uppercase">Leadership</h2>
-            <h3 class="mission-subheader">Meet our Pastors</h3>
-          </div>
-        </div>
+  
         <div class="row">
 
-          <div class="col-md-3 col-sm-6 portfolio-item">
+          <div class="col-md-3 col-8 offset-2 offset-md-0 portfolio-item leader-margin-bottom">
           <!--   <a class="leadership-text class="" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid leader-img rounded-circle" src="img/leadership/Mark.jpg" alt="">
+
+              <div style="leader-img-wrap" >
+              <img class="img-fluid leader-img" src="img/leadership/Mark_square.jpg" alt="">
+              </div>
             <!-- </a> -->
             <div class="portfolio-caption">
               <div class="leadership-title">Senior Pastor</div>
               <div class="leadership-text">Mark Demel</div> 
-              <a class="  leadership-text" href="tel:+17604682712">
-                  760-468-2712
-                    
-              </a>
-              <a class="  leadership-text" href="mailto: mdemel@oslcarcadia.org">
-                      mdemel@oslcarcadia.org
-                    
+              <div>
+                <a class="  leadership-text" href="tel:+17604682712">
+                    760-468-2712  
                 </a>
+              </div>
+              <div>
+                <a class="  leadership-text" href="mailto: mdemel@oslcarcadia.org">
+                  mdemel@oslcarcadia.org    
+                </a>
+              </div>
+
+              </br>
+              </br>
+              </br>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 portfolio-item">
+          <div class="col-md-3 col-8 offset-2 offset-md-0 portfolio-item leader-margin-bottom">
            <!--  <a class="leadership-text class="" data-toggle="modal" href="#portfolioModal2">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid leader-img rounded-circle" src="img/leadership/Albert.jpg" alt="">
+
+              <div style="leader-img-wrap" >
+              <img class="img-fluid leader-img" src="img/leadership/Albert_square.jpg" alt="">
+              </div>
             <!-- </a> -->
             <div class="portfolio-caption">
               <div class="leadership-title">Associate Pastor</div>
               <div class="leadership-text">Albert Chai</div>
-              <a class="  leadership-text" href="tel:+16264477690">626-447-7690</a>
-              <a class="  leadership-text" href="mailto: alberttchai@yahoo.com">
-                      alberttchai@yahoo.com
+              <div>
+                <a class="  leadership-text" href="tel:+16264477690">
+                  626-447-7690
                 </a>
+              </div>
+              <div>
+                <a class="  leadership-text" href="mailto: alberttchai@yahoo.com">
+                  alberttchai@yahoo.com
+                </a>
+              </div>
+              <br>
+              <br>
+              <br>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 portfolio-item">
+          <div class="col-md-3 col-8 offset-2 offset-md-0 portfolio-item leader-margin-bottom">
             <!-- <a class="leadership-text class="" data-toggle="modal" href="#portfolioModal3">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div> -->
-              <img class="img-fluid leader-img rounded-circle" src="img/leadership/barlows.png" alt="">
+              <div style="leader-img-wrap" >
+              <img  class="leader-img" src="img/leadership/barlows_square.png" alt="">
+              </div>
             <!-- </a> -->
             <div class="portfolio-caption">
               <div class="leadership-title">Vicar</div>
               <div class="leadership-text">Brian Barlow</div>
-
-              <a class="  leadership-text" href="tel:+16264477690">
-                      626-447-7690
-               
-              </a>
-
-              <a class="  leadership-text" href="mailto: brian.barlow@eagles.cui.edu">
-                      brian.barlow@eagles.cui.edu
-                      
-              </a>
+              <div>
+                <a class="  leadership-text" href="tel:+16264477690">
+                  626-447-7690          
+                </a>
+              </div>
+              <div>
+                <a class="  leadership-text" href="mailto: brian.barlow@eagles.cui.edu">
+                  brian.barlow@eagles.cui.edu     
+                </a>
+              </div>
+              </br>
+              </br>
+              </br>
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 portfolio-item">
-              <img class="img-fluid leader-img rounded-circle" src="img/leadership/Jesse.png" alt="">
+          <div class="col-md-3 col-8 offset-2 offset-md-0 portfolio-item leader-margin-bottom">
+
+              <div style="leader-img-wrap" >
+              <img class="img-fluid leader-img" src="img/leadership/Jesse_square.png" alt="">
+              </div>
             
             <div class="portfolio-caption">
               <div class="leadership-title">Youth and Family</div>
               <div class="leadership-text">Jesse Brubaker</div>
-              <a class="leadership-text" href="tel:+19098965837">
-                909-896-5837
-              </a>
-              <a class="  leadership-text" href="mailto: jbrubaker@oslcarcadia.org">
-                      jbrubaker@oslcarcadia.org      
-              </a>
+              <div>
+                <a class="leadership-text" href="tel:+19098965837">
+                  909-896-5837
+                </a>
+              </div>
+              <div>
+                <a class="  leadership-text" href="mailto: jbrubaker@oslcarcadia.org">
+                  jbrubaker@oslcarcadia.org      
+                </a>
+              </div>
             </div>
           </div>
           

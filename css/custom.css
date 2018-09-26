@@ -17,7 +17,9 @@
 
 @font-face {
     font-family: 'ralewaythin';
-    src: url('../font/raleway/raleway-thin-webfont.woff2') format('woff2'),
+    src: url('https://www.oslcarcadia.com/font/raleway/raleway-thin-webfont.woff2') format('woff2'),
+         url('https://www.oslcarcadia.com/font/raleway/raleway-thin-webfont.woff') format('woff'),
+         url('../font/raleway/raleway-thin-webfont.woff2') format('woff2'),
          url('../font/raleway/raleway-thin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -25,7 +27,9 @@
 }
 @font-face {
     font-family: 'raleway';
-    src: url('../font/raleway/raleway-thin-webfont.woff2') format('woff2'),
+    src: url('https://www.oslcarcadia.com/font/raleway/raleway-thin-webfont.woff2') format('woff2'),
+         url('https://www.oslcarcadia.com/font/raleway/raleway-thin-webfont.woff') format('woff'),
+         url('../font/raleway/raleway-thin-webfont.woff2') format('woff2'),
          url('../font/raleway/raleway-thin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -338,6 +342,23 @@ div.transbox a {
  
 }
 
+
+.modal-text{
+  font-size: 14px;
+  font-weight: 300;
+  font-family: futura_md_btmedium;
+}
+.modal-text-subtitle{
+  font-size: 18px;
+  font-weight: 600;
+  font-family: raleway;
+}
+ .modal-text-title{
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: futura_md_btmedium;
+}
   .align-center{
     align-items: center;
     
@@ -345,11 +366,16 @@ div.transbox a {
   text-center{
     text-align: center;
     },
-  .groups-margin-top{
-    width: 100%;
-    max-width: 100%;
-    padding-top: 50px;
-  }
+.groups-margin-top{
+  width: 100%;
+  max-width: 100%;
+  padding-top: 50px;
+}
+.groups-underline{
+    font-size: 200px;
+
+    text-decoration-color: black;
+}
 .neg-margin{
   margin-top:-2em;  
 }
@@ -531,11 +557,13 @@ h4{
 h4:hover{
   color: red;
 }*/
-
+.leader-margin-bottom{
+  margin-bottom: 20px;
+}
 .leader-img{
 
-    width: 100%;
-    height: 60%;
+    width: 80%;
+    height: width;
       border-radius: 50%;
 }
 .leadership-title{
@@ -638,7 +666,7 @@ div.leadership-text a:hover {
       font-size: 16px;
       font-style: italic;
       margin: 0;
-     font-family: 'futura_md_btmedium', Fallback, sans-serif; 
+     font-family: futura_md_btmedium, Fallback, sans-serif; 
    }
 
 #portfolio * {
@@ -665,7 +693,7 @@ div.leadership-text a:hover {
       font-size: 16px;
       font-style: italic;
       margin: 20px 0 30px;
-      font-family: 'futura_md_btmedium', Fallback, sans-serif; 
+      font-family: futura_md_btmedium; 
       }
     .portfolio-modal .modal-content ul.list-inline {
       margin-top: 0;
@@ -786,7 +814,7 @@ div.leadership-text a:hover {
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'futura_md_btmedium', Fallback, sans-serif; 
+  font-family: futura_md_btmedium; 
   }
 
 .button-xl {

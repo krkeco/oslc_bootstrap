@@ -14,19 +14,19 @@
 
           
                     <div>
-            <a class="btn-default row contact-info bg-gray" href="tel:+16264477690">
+            <a style="text-decoration-color: #626F82;" class="btn-default row contact-info bg-gray" href="tel:+16264477690">
                       
                 <div class="col-12">626-447-7690</div>
                       </a>
                     </div>
           
 
-            <a class="btn-default row contact-info bg-gray" data-toggle="modal" href="#directions_pop">
+            <a style="text-decoration-color: #626F82;" class="btn-default row contact-info bg-gray" data-toggle="modal" href="#directions_pop">
               <div class="col-12">Directions</div>
             </a>
 
 
-            <a class="btn-default row contact-info bg-gray" href="mailto: oslcarcadia@aol.com">
+            <a style="text-decoration-color: #626F82;" class="btn-default row contact-info bg-gray" href="mailto: oslcarcadia@aol.com">
               <div class="col-12">oslcarcadia@aol.com</div>
             </a>
             </br>
@@ -59,17 +59,22 @@
             </div>
               
 
+            <div class="col-12">
 
-            <!-- <a class="row contact-info" data-toggle="modal" href="#giving_pop"> -->
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-  <input type="hidden" name="cmd" value="_s-xclick">
-  <input type="hidden" name="hosted_button_id" value="777P4Z3QTEVDY">
-  <input type="image" src="" border="0" name="submit" alt="Giving " class="contact-info"> 
-
-  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="0" height="0">
-
-  </form>
-                    <div class="col-12"></div>
+            <a style="text-decoration-color: #626F82;"
+            class="btn-default row contact-info bg-gray" href="#">
+            
+            <form 
+            action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            Giving
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="777P4Z3QTEVDY">
+            <input type="image" src="" border="0" name="submit" alt="" class="contact-info"> 
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="0" height="0">
+            </form>
+            
+              
+            </div>
             </a>
 
           </div>
@@ -100,14 +105,14 @@
         <div class="row neg-margin">
 
           <div class="col-lg-2 ml-auto text-center">
-            <a href="tel:+16264477690">
+            <a style="text-decoration-color: #626F82;" href="tel:+16264477690">
                 <i class="fa fa-phone fa-3x sr-contact"></i>
                 <p>626-447-7690</p>
             </a>
           </div>
           
 
-          <a class="portfolio-link col-lg-2 mr-auto text-center" data-toggle="modal" href="#directions_pop">
+          <a style="text-decoration-color: #626F82;" class="portfolio-link col-lg-2 mr-auto text-center" data-toggle="modal" href="#directions_pop">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                   <i class="fa fa-car fa-3x sr-contact"></i>
@@ -119,13 +124,13 @@
 
           <div class="col-lg-3 mr-auto text-center">
            
-            <a href="mailto: http://oslcarcadia@aol.com">
+            <a style="text-decoration-color: #626F82;" href="mailto: http://oslcarcadia@aol.com">
               <i class="fa fa-envelope-o fa-3x sr-contact"></i>
               <p>oslcarcadia@aol.com</p>
             </a>
           </div>
 
-          <a class="portfolio-link col-lg-2 mr-auto text-center" data-toggle="modal" href="#giving_pop">
+          <a style="text-decoration-color: #626F82;" class="portfolio-link col-lg-2 mr-auto text-center" data-toggle="modal" href="#giving_pop">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
               <i class="fa fa-institution fa-3x sr-contact"></i>
@@ -135,7 +140,7 @@
             </div>
           </a>
 
-          <a class="portfolio-link col-lg-2 mr-auto text-center" data-toggle="modal" href="#leadership_pop">
+          <a style="text-decoration-color: #626F82;" class="portfolio-link col-lg-2 mr-auto text-center" data-toggle="modal" href="#leadership_pop">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
               <i class="fa fa-user-o fa-3x sr-contact"></i>

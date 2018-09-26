@@ -12,18 +12,21 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
+                <div class="modal-body modal-text">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Union Station</h2>
-                  <p class="item-intro text-muted">Third Saturday of the month</p>
+                  <div class="modal-text-title">Union Station</div>
+                  <div class="modal-text-subtitle">Fourth Saturday of the month</div>
                  
-                  <p>
-                    <strong>Join us as we serve through our Adopt-a­-Meal</strong> program­.  We provide dinner for the Pasadena Union Station homeless shelter on the <strong>4th Saturday of every month.  We leave at 6:15pm from church
-                    </strong>
-
-                    We are currently in need of a strong group or individual to lead this ministry every other month.  If you are interested in growing as a leader and disciple of Christ, please <a href="mailto:oslc.kc@gmail.com">contact KC</a> to talk about this awesome ministry!
-                  </p>
-                   <img class="img-fluid d-block mx-auto" src="img/fellowships/unionstation.jpg" alt="">
+                  <div>
+                    Join us as we serve through our Adopt-a­-Meal program­.  We provide dinner for the Pasadena Union Station homeless shelter on the 4th Saturday of every month.  
+                  </div>
+                  <div>
+                    We leave at 6:15pm from church!
+                  </div>
+                  <div>
+                    Please <a href="mailto:dcejes@gmail.com">contact Jesse</a> for more information about this awesome ministry!
+                  </div>
+                   <img class="img-fluid d-block mx-auto" src="img/missions/unionstation.jpg" alt="">
                  <!--  <ul class="list-inline">
                     <li>Date: January 2017</li>
                     <li>Client: Lines</li>
@@ -52,10 +55,10 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
+                <div class="modal-body modal-text">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Homeless Ministry</h2>
-                  <p class="item-intro text-muted">Azusa Wash Homeless Ministry</p>
+                  <div class="text-uppercase modal-text-title">Homeless Ministry</div>
+                  <p class="modal-text-subtitle">Azusa Wash Homeless Ministry</p>
                   <p>Join Michael and Beverly Powers in their ministry to provide love to an often overlooked and hurting group of people in Azusa.
                   </p>
                   <p>

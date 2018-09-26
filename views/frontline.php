@@ -49,7 +49,7 @@
                     <h2 class="h2.transbox">Resources</h2>
 
                     <div>
-                      <a class="btn-default portfolio-link" data-toggle="modal" href="#beliefs_pop">
+                      <a class="mr-auto portfolio-link" data-toggle="modal" href="#beliefs_pop">
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
                             <div class="frontline-link">
@@ -73,7 +73,7 @@
                     </div>
 
                     <div>
-                      <a class="btn-default portfolio-link" data-toggle="modal" href="#calendar_pop">
+                      <a class="mr-auto portfolio-link" data-toggle="modal" href="#calendar_pop">
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
                             <div class="frontline-link">
@@ -85,7 +85,7 @@
                     </div>
 
                     <div>
-                      <a class="btn-default portfolio-link" data-toggle="modal" href="#youth_calendar_pop">
+                      <a class="mr-auto portfolio-link" data-toggle="modal" href="#youth_calendar_pop">
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
                             <div class="frontline-link">
@@ -97,7 +97,7 @@
                     </div>
 
                     <div>
-                      <a class="btn-default portfolio-link" href="https://sermons.oslcarcadia.com">
+                      <a class="mr-auto portfolio-link" href="https://sermons.oslcarcadia.com">
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
                             <div class="frontline-link">
@@ -110,7 +110,7 @@
 
 
                     <div>
-                      <a class="btn-default portfolio-link" data-toggle="modal" href="#prayer_pop">
+                      <a class="mr-auto portfolio-link" data-toggle="modal" href="#prayer_pop">
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
                             <div class="frontline-link">
@@ -141,6 +141,8 @@
                        (All ages)
                        <!-- </a> -->
                        </br>
+                      10:30AM Modern Worship
+                      </br>
                       10:45AM Liturgical Service
                       </br>
                        6:30PM Praise Service
