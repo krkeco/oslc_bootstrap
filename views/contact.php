@@ -12,18 +12,21 @@
               </div>
             </div>
 
-            <a class="row contact-info" href="tel:+16264477690">
-                <div class="col-12">626-447-7690</div>
-            </a>
           
+                    <div>
+            <a class="btn-default row contact-info bg-gray" href="tel:+16264477690">
+                      
+                <div class="col-12">626-447-7690</div>
+                      </a>
+                    </div>
           
 
-            <a class="row contact-info" data-toggle="modal" href="#directions_pop">
+            <a class="btn-default row contact-info bg-gray" data-toggle="modal" href="#directions_pop">
               <div class="col-12">Directions</div>
             </a>
 
 
-            <a class="row contact-info" href="mailto: oslcarcadia@aol.com">
+            <a class="btn-default row contact-info bg-gray" href="mailto: oslcarcadia@aol.com">
               <div class="col-12">oslcarcadia@aol.com</div>
             </a>
             </br>
@@ -63,7 +66,7 @@
   <input type="hidden" name="hosted_button_id" value="777P4Z3QTEVDY">
   <input type="image" src="" border="0" name="submit" alt="Giving " class="contact-info"> 
 
-  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="0" height="0">
 
   </form>
                     <div class="col-12"></div>

@@ -6,7 +6,9 @@
 
 @font-face {
     font-family: 'futura_md_btmedium';
-    src: url('../font/futura/futura_medium_bt-webfont.woff2') format('woff2'),
+    src: url('https://www.oslcarcadia.com/font/futura/futura_medium_bt-webfont.woff2') format('woff2'),
+         url('https://www.oslcarcadia.com/font/futura/futura_medium_bt-webfont.woff') format('woff'),
+         url('../font/futura/futura_medium_bt-webfont.woff2') format('woff2'),
          url('../font/futura/futura_medium_bt-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -168,6 +170,8 @@
   margin-bottom: -300px;
 }
 
+
+
 .transbox {
   color: #626F82;
   line-height: 1;
@@ -212,6 +216,9 @@
 }
 
 div.transbox h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: futura_md_btmedium;
   padding-bottom: 1em;
 }
 
@@ -265,6 +272,7 @@ div.transbox a {
   font-weight: 500;
   font-family: raleway;
 
+  background-color: #626F82 !important;
 }
 @media(min-width: 768px){
 
@@ -293,6 +301,7 @@ div.transbox a {
   }
 }
 .mission-header{
+  font-family: futura_md_btmedium;
   margin-top: -50px;
   font-size: 72px;
   color: #626F82;
@@ -488,7 +497,7 @@ div.transbox a {
                 }
 
 
-.rounded-borde{
+.rounded-border{
   border-radius: 15px;
   margin-top: 5px;
 }
@@ -505,6 +514,7 @@ div.transbox a {
 }
 
 
+
 .bg-sanctuary{
   background-image: url("../img/sanctuary_light.png"); 
   background-position: center;
@@ -514,15 +524,35 @@ div.transbox a {
   background-size: cover;        
   font-size: 22px;
 }
+/*
 h4{
   color:white;
 }
 h4:hover{
   color: red;
+}*/
+
+.leader-img{
+
+    width: 100%;
+    height: 60%;
+      border-radius: 50%;
 }
-.h4-red{
-  color:red;
+.leadership-title{
+  font-family: futura_md_btmedium;
+  color: #626F82;
+  font-size: 24px;
 }
+.leadership-text{
+  font-family: raleway;
+  font-weight: 700;
+  color: #626F82; 
+}
+
+div.leadership-text a:hover {
+  color: #626F82;
+}
+
 .open-sans{
   font-family: 'futura_md_btmedium', Fallback, sans-serif; 
 }

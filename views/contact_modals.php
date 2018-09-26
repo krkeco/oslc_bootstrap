@@ -32,7 +32,7 @@
                     Our beliefs are firmly grounded in the doctrine of Grace, Faith, and Scripture. We believe that all are sinful, and it is only through the Grace of God that we are saved.  This Grace is given through Faith in Jesus Christ, God’s son.  Finally, that the Bible is the Holy infallible inspiration of God.
                     </br>
                     A more comprehensive explanation of our beliefs can be found 
-                    <a href="https://www.lcms.org/about/beliefs/doctrine" style="color: #b50012;">
+                    <a class="leadership-text href="https://www.lcms.org/about/beliefs/doctrine" style="color: #b50012;">
                       here.
                     </a>
                   </p>
@@ -283,7 +283,7 @@ Albert Chai</p>
 
 </div>
 <div style="display: inline-block;">
-<a href="http://oslcarcadia.com/vicarbrian/">
+<a class="leadership-text href="http://oslcarcadia.com/vicarbrian/">
 <p style="border-style: solid; margin: 5px; border-width: 5px; width: 250px; text-align: center;"><img class="aligncenter wp-image-2519" src="http://oslcarcadia.com/wp-content/uploads/2017/10/brian2-1-240x300.png" alt="" width="224" height="280">Vicar:
 Brian Barlow</p>
 
@@ -374,12 +374,12 @@ Jenny, Jamie, (cameo: Allison, and KC)</p>
                 <div class="modal-body">
 
                   <h2 class="text-uppercase">Giving</h2>
-                  <h5>Your contributions help us fuel our missions teams around the world and at home</h5>
+                  <div>Your contributions help us fuel our missions teams around the world and at home</div>
                   </br>
 
                   <h3>Direct Donations:</h3>
 <!-- 
-<a class="btn btn-success" href="http://localhost/Workspace/oslc/OSLCCreativeBootStrap/amazonpay/ExpressPayment.php" target="_blank">Donate with Amazon</a> -->
+<a class="leadership-text class="btn btn-success" href="http://localhost/Workspace/oslc/OSLCCreativeBootStrap/amazonpay/ExpressPayment.php" target="_blank">Donate with Amazon</a> -->
 
                 
 
@@ -406,7 +406,7 @@ Jenny, Jamie, (cameo: Allison, and KC)</p>
                   Click on the button below to link your Amazon account with our church:
                   </br>
 
-                  <a href="https://smile.amazon.com/ch/95-2567604">
+                  <a class="leadership-text href="https://smile.amazon.com/ch/95-2567604">
                   <img class="img-fluid d-block mx-auto" src="img/giving/amazon_smile.jpg" alt="Amazon-Smile" /></a>
                   
                   </br>
@@ -491,82 +491,88 @@ Jenny, Jamie, (cameo: Allison, and KC)</p>
               <div class="col-lg-12 mx-auto">
                 <div class="modal-body">
 
-    <div class="container">
+   <!--  <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Leadership</h2>
-            <h3 class="section-subheading text-muted">Meet our Pastors</h3>
+            <h2 class="mission-header text-uppercase">Leadership</h2>
+            <h3 class="mission-subheader">Meet our Pastors</h3>
           </div>
         </div>
         <div class="row">
 
           <div class="col-md-3 col-sm-6 portfolio-item">
-          <!--   <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div> -->
-              <img class="img-fluid rounded-circle" src="img/leadership/Mark.jpg" alt="">
-            <!-- </a> -->
+          
+              <img class="img-fluid leader-img rounded-circle" src="img/leadership/Mark.jpg" alt="">
+            
             <div class="portfolio-caption">
-              <h4 class="h4-red">Senior Pastor</h4>
-              <h5 class="text-muted">Mark Demel</h5> 
-              <a href="tel:+17604682712">760-468-2712</a>
-              <a href="mailto: mdemel@oslcarcadia.org">mdemel@oslcarcadia.org</a>
+              <div class="leadership-title">Senior Pastor</div>
+              <div class="leadership-text">Mark Demel</div> 
+              <a class="  leadership-text" href="tel:+17604682712">
+                  760-468-2712
+                    
+              </a>
+              <a class="  leadership-text" href="mailto: mdemel@oslcarcadia.org">
+                      mdemel@oslcarcadia.org
+                    
+                </a>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 portfolio-item">
-           <!--  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div> -->
-              <img class="img-fluid rounded-circle" src="img/leadership/Albert.jpg" alt="">
-            <!-- </a> -->
+           
+              <img class="img-fluid leader-img rounded-circle" src="img/leadership/Albert.jpg" alt="">
             <div class="portfolio-caption">
-              <h4 class="h4-red">Associate Pastor</h4>
-              <h5 class="text-muted">Albert Chai</h5>
-              <a href="tel:+16264477690">626-447-7690</a>
-              <a href="mailto: alberttchai@yahoo.com">alberttchai@yahoo.com</a>
+              <div class="leadership-title">Associate Pastor</div>
+              <div class="leadership-text">Albert Chai</div>
+              <a class="  leadership-text" href="tel:+16264477690">626-447-7690</a>
+              <a class="  leadership-text" href="mailto: alberttchai@yahoo.com">
+                      alberttchai@yahoo.com
+                </a>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 portfolio-item">
-            <!-- <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div> -->
-              <img class="img-fluid rounded-circle" src="img/leadership/barlows.png" alt="">
-            <!-- </a> -->
+            
+              <img class="img-fluid leader-img rounded-circle" src="img/leadership/barlows.png" alt="">
             <div class="portfolio-caption">
-              <h4 class="h4-red">Vicar</h4>
-              <h5 class="text-muted">Brian Barlow</h5>
-              <a href="tel:+16264477690">626-447-7690</a>
-              <a href="mailto: brian.barlow@eagles.cui.edu">brian.barlow@eagles.cui.edu</a>
+              <div class="leadership-title">Vicar</div>
+              <div class="leadership-text">Brian Barlow</div>
+
+              <a class="  leadership-text" href="tel:+16264477690">
+                      626-447-7690
+               
+              </a>
+
+              <a class="  leadership-text" href="mailto: brian.barlow@eagles.cui.edu">
+                      brian.barlow@eagles.cui.edu
+                      
+              </a>
             </div>
           </div>
+
           <div class="col-md-3 col-sm-6 portfolio-item">
-            <!-- <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>-->
-              <img class="img-fluid rounded-circle" src="img/leadership/Jesse.png" alt="">
-            <!-- </a> -->
+              <img class="img-fluid leader-img rounded-circle" src="img/leadership/Jesse.png" alt="">
+            
             <div class="portfolio-caption">
-              <h4 class="h4-red">Youth and Family</h4>
-              <h5 class="text-muted">Jesse Brubaker</h5>
-              <a href="tel:+19098965837">909-896-5837</a>
-              <a href="mailto: jbrubaker@oslcarcadia.org">jbrubaker@oslcarcadia.org</a>
+              <div class="leadership-title">Youth and Family</div>
+              <div class="leadership-text">Jesse Brubaker</div>
+              <a class="leadership-text" href="tel:+19098965837">
+                909-896-5837
+              </a>
+              <a class="  leadership-text" href="mailto: jbrubaker@oslcarcadia.org">
+                      jbrubaker@oslcarcadia.org      
+              </a>
             </div>
           </div>
           
         </div>
       </div>
+ -->
+
+<?php 
+//DONT CHANGE THIS THE contact_subpage has this stuff
+
+//this one
+print file_get_contents("http://www.contact.oslcarcadia.com/"); 
+?>
 
                 </div>
               </div>

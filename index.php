@@ -6,7 +6,7 @@
  <head>
 
 
-    <link style="width: 48px" rel="shortcut icon" type="image/x-icon" href="img/logo/full.svg" />
+    <link style="width: 48px" rel="shortcut icon" type="image/x-icon" href="img/logo/48_black.png" />
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

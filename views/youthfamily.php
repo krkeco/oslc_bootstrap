@@ -15,7 +15,7 @@
 
             <div class="row">
               <div class="col-lg-12">
-                <div class="family-title">Family</div>
+                <div class="family-title">FAMILY</div>
                 </br>
                 <div class="family-intro">OSLC Arcadia is a community and is actively growing its youth ministry, building up believers for the next generation</div>
               </div>
