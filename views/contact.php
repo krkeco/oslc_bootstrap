@@ -62,19 +62,11 @@
             <div class="col-12">
 
             <a style="text-decoration-color: #626F82;"
-            class="btn-default row contact-info bg-gray" href="#">
-            
-            <form 
-            action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+             target="_blank"
+            class="btn-default row contact-info bg-gray" 
+            href="https://www.donate.oslcarcadia.com">
             Giving
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="777P4Z3QTEVDY">
-            <input type="image" src="" border="0" name="submit" alt="" class="contact-info"> 
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="0" height="0">
-            </form>
             
-              
-            </div>
             </a>
 
           </div>

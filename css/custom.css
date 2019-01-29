@@ -35,6 +35,14 @@
     font-style: normal;
 
 }
+:root {
+    --main-gray: #626F82; 
+    --dark-gray: #525f72; 
+    /*implement this please*/
+    --flat-white: #F5FCFF;
+
+}
+
 .bg-groups{
   background-color: #888B9E !important;
 }
@@ -48,6 +56,9 @@
     width: 50%;
 }
 
+.email2{
+  display: none;
+}
 
 .title{
 
@@ -137,7 +148,7 @@
 
 
 .frontline-link{
-  color: #626F82;
+  color: var(--dark-gray);
   line-height: 1.2;
   font-size: 1.5em;
   font-weight: 700;
@@ -177,7 +188,7 @@
 
 
 .transbox {
-  color: #626F82;
+  color: var(--dark-gray);
   line-height: 1;
   font-family: futura_md_btmedium; 
   font-weight: 600;
@@ -228,13 +239,13 @@ div.transbox h2 {
 
 
 div.transbox a {
-  color: #626F82;
+  color: var(--dark-gray);
 }
 
 .family-title{
   font-size: 72px;
   font-weight: 300;
-  color: #626F82;
+  color: var(--main-gray);
   font-family: futura_md_btmedium;
   
 
@@ -247,7 +258,7 @@ div.transbox a {
 .family-intro{
   font-size: 18px;
   font-weight: 600;
-  color: #626F82;
+  color: var(--dark-gray);
   font-family: raleway;
   margin-bottom: 40px;
   
@@ -258,7 +269,7 @@ div.transbox a {
   margin-top: 20px;
   font-size: 14px;
   font-weight: 300;
-  color: #626F82;
+  color: var(--dark-gray);
   font-family: futura_md_btmedium;
 }
 
@@ -276,7 +287,7 @@ div.transbox a {
   font-weight: 500;
   font-family: raleway;
 
-  background-color: #626F82 !important;
+  background-color: var(--main-gray) !important;
 }
 @media(min-width: 768px){
 
@@ -308,14 +319,14 @@ div.transbox a {
   font-family: futura_md_btmedium;
   margin-top: -50px;
   font-size: 72px;
-  color: #626F82;
+  color: var(--main-gray);
 }
 .mission-subheader{
   font-size: 20px;
   margin-bottom: 0px;
   font-family: ralewaythin;
   font-weight: 700;
-  color: #626F82;
+  color: var(--dark-gray);
   padding-bottom: 100px;
 
 }
@@ -331,14 +342,14 @@ div.transbox a {
 .mission-name{
   font-size: 24px;
   font-family: futura_md_btmedium;
-  color: #626F82;
+  color: var(--main-gray);
  
 }
 .mission-name-subtitle{
   font-size: 12px;
   font-weight: 800;
   font-family: raleway;
-  color: #626F82;
+  color: var(--dark-gray);
  
 }
 
@@ -568,17 +579,17 @@ h4:hover{
 }
 .leadership-title{
   font-family: futura_md_btmedium;
-  color: #626F82;
+  color: var(--main-gray);
   font-size: 24px;
 }
 .leadership-text{
   font-family: raleway;
   font-weight: 700;
-  color: #626F82; 
+  color: var(--dark-gray); 
 }
 
 div.leadership-text a:hover {
-  color: #626F82;
+  color: var(--dark-gray);
 }
 
 .open-sans{
@@ -590,7 +601,7 @@ div.leadership-text a:hover {
 }
 
 .bg-brown {
-  color: #626F82;
+  color: var(--main-gray);
   background-color: #301c00 !important; 
 }
 .bg-frontline {
@@ -602,7 +613,7 @@ div.leadership-text a:hover {
 }
 
 .bg-gray {
-  background-color: #626F82 !important;
+  background-color: var(--main-gray) !important;
   }
 
 .long{
@@ -936,14 +947,14 @@ header.masterhead {
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.95);
-  background-color: #626F82;
+  background-color: var(--main-gray);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
      }
   #mainNav .navbar-brand {
     font-weight: 500;
-    background-color: #626F82;
+    background-color: var(--main-gray);
     text-transform: uppercase;
     color: #fff; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -954,7 +965,7 @@ header.masterhead {
     text-transform: uppercase;
     color: #fff; }
     #mainNav .navbar-nav {
-      background-color: #626F82;
+      background-color: var(--main-gray);
       align-items: flex-end; 
 
       }
@@ -1010,7 +1021,7 @@ header.masterhead {
           /*this is after scroll 100 down page*/
       #mainNav.navbar-shrink {
         border-color: rgba(34, 34, 34, 0.05);
-        background-color: #626F82 !important; }
+        background-color: var(--main-gray) !important; }
         #mainNav.navbar-shrink .navbar-brand {
           font-size: 18px;
           color: #fff; }

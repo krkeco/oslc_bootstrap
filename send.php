@@ -51,6 +51,9 @@ try {
         !isset($_POST['comment'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
+    if($_POST['email_add'] != ''){
+        died('sorry, we think you may be a lurk');
+    }
 
 
     $email = $_POST['email']; // required

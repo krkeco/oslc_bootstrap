@@ -164,7 +164,7 @@
     </div>
 
 
-    <!-- Recordings -->
+    <!-- Prayer Requests -->
     <div class="portfolio-modal modal fade" id="prayer_pop" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -194,16 +194,15 @@
                 </script>
                   <form action="send.php" method="post">
                     <div class="header-content-inner">
+                      <label id="email2" class="email2">Email: <input name="email_add" type="email_add" id="email_add"></label>
                       Your name:</br>
                       <input name="name" type="text" id="name" size="32" required></br></br>
                       Email address:</br>
                       <input name="email" type="email" id="email" size="32"  minlength="6" required></br></br>
                       Prayer Request:</br>
                       <textarea name="comment" cols="32" rows="6" id="comment" class="bodytext" required></textarea></br>
-                      <div align="center"
-                      data-callback="enableBtn"
-                      class="g-recaptcha" data-sitekey="6LfQhkUUAAAAAPUqoBazDokoKo9A50nZYcNDURXO"></div></br>
-                      <input id="submit_details" disabled type="submit" name="Submit" value="Send">
+                      
+                      <input id="submit_details" type="submit" name="Submit" value="Send">
 
                     </div>
                   </form> 

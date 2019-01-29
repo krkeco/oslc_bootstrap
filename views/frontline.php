@@ -101,7 +101,7 @@
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
                             <div class="frontline-link">
-                              Sermon Archive
+                              Sermon Recordings
                             </div>
                           </div>
                         </div>
