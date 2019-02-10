@@ -141,11 +141,10 @@
                        (All ages)
                        <!-- </a> -->
                        </br>
-                      10:30AM Modern Worship
-                      </br>
+                     
                       10:45AM Liturgical Service
                       </br>
-                       6:30PM Praise Service
+                       6:30PM Modern Praise Service
                        </br></br>
                        
                        Monday
