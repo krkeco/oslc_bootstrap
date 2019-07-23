@@ -29,13 +29,13 @@
         <!-- </div>
       </div> -->
 
-    <div class="frontline-header text-uppercase" id="about">
+    <div class="frontline-header text-uppercase" >
       <div class="frontline-title">
         Our Savior Lutheran Church in Arcadia
       </div>
     </div>
           
-    <div style="margin-top: -5em;">
+    <div style="margin-top: -5em;" id="about">
       <div class="mheader-content" >
         <div class="mheader-content-inner" style="text-align:left; color: black;">
     
@@ -172,20 +172,26 @@
                 </div>  
               </div>
 
-
               <div class="tbox-bot col-12 col-sm-10 offset-sm-1  offset-md-0 col-md-4">
                 <div class="transbox ">
                   <div class="frontline-link">
-                    <h2>Directions</h2>
-                      
-                      Address:
-                      
-                      </br>
-                      <a  style="font-weight: 700" data-toggle="modal" href="#directions_pop">
-                      512 W Duarte Rd., 
-                      </br>
-                      Arcadia, CA 91007
-                      </a>
+                    <a  style="font-weight: 700" data-toggle="modal" href="#directions_pop">
+                      <h2>Directions</h2>
+
+                      <div class="container">
+                        <div class="row justify-content-center">
+                          <div class="col-auto">
+                            <img class="img-fluid d-block mx-auto family-image" src="img/maposlc.png" alt="">
+                          </div>
+
+                          <div class="col-auto">  
+                            512 W Duarte Rd., 
+                            </br>
+                            Arcadia, CA 91007
+                          </div>
+                        </div>
+                      </div>
+                    </a>
                       
                       </br>
                       <br/>
