@@ -59,18 +59,6 @@
             </div>
               
 
-            <div class="col-12">
-
-            <a style="text-decoration-color: #626F82;"
-             target="_blank"
-            class="btn-default row contact-info bg-gray" 
-            href="https://www.donate.oslcarcadia.com">
-            Giving
-            
-            </a>
-
-          </div>
-
         </div>
       </div>  
       

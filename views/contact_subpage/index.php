@@ -75,8 +75,8 @@
               <div class="leadership-title">Senior Pastor</div>
               <div class="leadership-text">Mark Demel</div> 
               <div>
-                <a class="  leadership-text" href="tel:+17604682712">
-                    760-468-2712  
+                <a class="  leadership-text" href="tel:+16264477690">
+                  626-447-7690
                 </a>
               </div>
               <div>

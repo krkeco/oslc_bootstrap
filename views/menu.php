@@ -19,7 +19,10 @@
       <div class="collapse navbar-collapse menu-bar" id="menubar" >
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger menu-font" style=""  id="about-li">About</a>
+            <a class="nav-link js-scroll-trigger menu-font" style="color: red;" id="vbs-menu" href="https://vbspro.events/p/events/oslcvbs">VBS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger menu-font" style="" href="#about" id="about-li">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger menu-font" href="#youthfamily" id="family-li" >Family</a>
@@ -36,5 +39,5 @@
         </ul>
       </div>
 
-    </nav>
+</nav>
 

@@ -84,7 +84,7 @@
                       </a>
                     </div>
 
-                    <div>
+                  <!--   <div>
                       <a class="mr-auto portfolio-link" data-toggle="modal" href="#youth_calendar_pop">
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
@@ -94,14 +94,14 @@
                           </div>
                         </div>
                       </a>
-                    </div>
+                    </div> -->
 
                     <div>
                       <a class="mr-auto portfolio-link" href="https://sermons.oslcarcadia.com">
                         <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
                             <div class="frontline-link">
-                              Sermon Recordings
+                              Service Recordings
                             </div>
                           </div>
                         </div>
@@ -120,6 +120,24 @@
                         </div>
                       </a>
                     </div>
+
+
+                    <div>
+
+                      <a style=""
+                     target="_blank"
+                    class="mr-auto portfolio-link"
+                    href="https://www.donate.oslcarcadia.com">
+                       <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                     
+                    <div class="frontline-link">
+                    Tithing Online
+                    </div></div></div>
+
+                      </a>
+
+                  </div>
 
 
                   </div>
@@ -144,7 +162,7 @@
                      
                       10:45AM Liturgical Service
                       </br>
-                       6:30PM Modern Praise Service
+                       6:00PM Modern Praise Service
                        </br></br>
                        
                        Monday
