@@ -31,7 +31,7 @@
             <a class="nav-link js-scroll-trigger menu-font" href="#missions"  id="mission-li">Missions</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger menu-font" href="#groups"  id="group-li">Fellowship</a>
+            <a class="nav-link js-scroll-trigger menu-font" href="#groups"  id="group-li">Get Involved</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger menu-font" href="#contact"  id="conact-li">Contact</a>

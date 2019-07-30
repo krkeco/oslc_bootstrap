@@ -43,6 +43,7 @@
 
 }
 
+
 .bg-groups{
   background-color: #888B9E !important;
 }
@@ -132,13 +133,13 @@
   padding: 0px;
   padding-top: 10vh;
   font-family: futura_md_btmedium;
-  background-image: url("../img/header.jpg");
+  background-image: none;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: white;
+  /*color: white;*/
   height: 95vh;
   width: 100vw;
 }
@@ -148,6 +149,8 @@
   color: white;
   line-height: 1;
   font-family: futura_md_btmedium; 
+
+  text-shadow: 2px 2px #000;
   
   padding-top: 5vh;
   font-size: 2em;

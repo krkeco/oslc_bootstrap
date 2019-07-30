@@ -24,18 +24,29 @@
                 </div>
               </div>
             </div>
-          </div> -->
+          </div> 
 
-        <!-- </div>
-      </div> -->
+        </div>
+      </div>
+        -->
+
+ <video style="position: absolute; z-index: -1" width="100%" height="auto" autoplay loop>
+  <source src="./img/bgVid.mp4" type="video/mp4">
+  
+  Your browser does not support the video tag.  Please get a new computer/browser.
+</video> 
+
 
     <div class="frontline-header text-uppercase" >
+      
       <div class="frontline-title">
         Our Savior Lutheran Church in Arcadia
       </div>
     </div>
           
     <div style="margin-top: -5em;" id="about">
+
+      
       <div class="mheader-content" >
         <div class="mheader-content-inner" style="text-align:left; color: black;">
     
