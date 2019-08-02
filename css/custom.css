@@ -216,6 +216,26 @@
 }
 
 
+.recent-box {
+
+  color: var(--dark-gray);
+  line-height: 1;
+  font-family: futura_md_btmedium; 
+  font-weight: 600;
+  text-align: center;
+
+  box-shadow: 0 10px 0 #888;
+  background-color: #eee;
+  opacity: 0.80;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+  
+  font-size: 1em;
+
+  margin-top: -15em;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+
+}
 
 .transbox {
   color: var(--dark-gray);
@@ -224,9 +244,7 @@
   font-weight: 600;
   text-align: center;
 
-  padding-top: 2em;
-  
-
+  /*padding-top: 2em;*/
   margin-bottom: 10em;
   box-shadow: 0 10px 0 #888;
   background-color: #eee;

@@ -67,18 +67,6 @@
 ?>
 
 
-    <div style="position:absolute;top:60px;left:5px; width: 300px; height: 150px; background-color: #ccc" id="like_button_container"></div>
-
-
-    <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
-    <!-- Load our React component. -->
-    <script src="like_button.js"></script>
-
-
 <?php 
   include 'views/frontline.php';
  ?> 

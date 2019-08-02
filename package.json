@@ -23,9 +23,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
+    "url": "git+https://github.com/BlackrockDigital/startbootstrap-creative.git"
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "bootstrap": "^4.0.0-beta.2",
     "font-awesome": "4.7.0",
     "jquery": "^3.2.1",
@@ -41,5 +43,9 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "3.0.0"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
