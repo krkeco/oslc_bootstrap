@@ -17,7 +17,7 @@ const e = React.createElement;
     month[10] = "Nov";
     month[11] = "Dec";
     
-class RecentsList extends React.Component {
+class RecentUpdate extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
@@ -40,7 +40,8 @@ class RecentsList extends React.Component {
   }
 
   componentDidMount(){
-    this.getAPI();
+    // this.getAPI();
+    console.log(JSON.stringify(this.props.recent))
   }
   
   async getAPI() {
@@ -68,31 +69,33 @@ class RecentsList extends React.Component {
     let music = e('button', {onClick:this.play}, `${this.state.buttonText} ${this.state.recentTitle}`)
     let list = [];
 
-    this.state.recents.map((recent,index)=> {
-      let prettyDate = new Date(recent.date);
-      // console.log(prettyDate)
-      let theMonth = month[prettyDate.getMonth()];
-      // console.log(theMonth)
-      let theDay = prettyDate.getUTCDate();
-      // console.log('day: '+theDay)
-      let theDate = theMonth + "/" + theDay;
-      let text = theDate +" " + recent.component + " " + recent.title;
+    // // this.state.recents.map((recent,index)=> {
+    //   let hasRecording = false;
+    //   let prettyDate = new Date(recent.date);
+    //   // console.log(prettyDate)
+    //   let theMonth = month[prettyDate.getMonth()];
+    //   // console.log(theMonth)
+    //   let theDay = prettyDate.getUTCDate();
+    //   // console.log('day: '+theDay)
+    //   let theDate = theMonth + "/" + theDay;
+    //   let text = theDate +" " + recent.component + " " + recent.title;
 
-      if(recent.component == "Recording" && !this.state.hasRecording){
-        let newUrl = "https://oslcarcadia.com/sermons/"+recent.date.substring(0,4)+recent.date.substring(5,7)+recent.date.substring(8,10)+"_sermon.mp3"
-        this.setState({hasRecording: true, recentTitle: recent.title, recentUrl: newUrl});
-        // list[5] = e('audio',src="https://www.oslcarcadia.com/sermons/20160410_sermon.mp3",null)
-        console.log('there is a recording'+newUrl)
-        // this.audio = new Audio(this.state.recentUrl);
-        // list[0] = e('audio', {style: {color: "red", backgroundColor: "blue"}}, `recording`)        
-      }
+    //   if(recent.component == "Recording" && !this.state.hasRecording && !hasRecording){
+    //     hasRecording = true;
+    //     let newUrl = "https://oslcarcadia.com/sermons/"+recent.date.substring(0,4)+recent.date.substring(5,7)+recent.date.substring(8,10)+"_sermon.mp3"
+    //     this.setState({hasRecording: true, recentTitle: recent.title, recentUrl: newUrl});
+    //     // list[5] = e('audio',src="https://www.oslcarcadia.com/sermons/20160410_sermon.mp3",null)
+    //     console.log('there is a recording'+newUrl)
+    //     // this.audio = new Audio(this.state.recentUrl);
+    //     // list[0] = e('audio', {style: {color: "red", backgroundColor: "blue"}}, `recording`)        
+    //   }
 
-      list[index+1] = e('div', null, `${text}`)
-      console.log('krkeco'+text)
-      // return list;
-    })
+    //   list[index+1] = e('div', null, `${text}`)
+    //   console.log('krkeco'+text)
+    //   // return list;
+    // // })
 
-    let views = [music, list]
+    // let views = [music, list]
     
     return e(
       'div', null, views

@@ -32,7 +32,7 @@
 
 
 
- <video style="position: absolute; z-index: -1" width="100%" height="auto" autoplay loop>
+ <video style="position: absolute; z-index: -1; background-color: black" width="100%" height="auto" autoplay loop>
   <source src="./img/bgVid.mp4" type="video/mp4">
   
   Your browser does not support the video tag.  Please get a new computer/browser.
@@ -41,8 +41,8 @@
 
     <!-- Load React. -->
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
 
     <!-- Load our React component. -->
 
@@ -69,11 +69,11 @@
               <div class="col-12 col-sm-10 offset-sm-1 offset-md-4 col-md-4">
                   <div class="recent-box">
 
-                    <h2 class="h2.transbox">Recent Updates</h2>
+                    <h2 class="h2.transbox" style="text-align: center">Recent Uploads</h2>
 
-                    <div id="like_button_container"></div>
+                    <div id="recent_list_container"></div>
 
-                    <script src="like_button.js"></script>
+                    <script src="recent_list.js"></script>
 
                 </div>  
               </div>
