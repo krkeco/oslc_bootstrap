@@ -127,7 +127,12 @@
   50% {font-size:24px;}
   100%{font-size:12px;}
 }
-
+.frontline-video-container{
+  position: absolute; 
+  z-index: -1; 
+  background-color: black;
+  width:100%;
+}
 
 .frontline-header{
   padding: 0px;
@@ -152,11 +157,12 @@
 
   text-shadow: 2px 2px #000;
   
+  text-align: center;
   padding-top: 5vh;
   font-size: 2em;
 
-  padding-left: 1vw;
-  padding-right: 1vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 @media (min-width: 768px) {
   .frontline-title {

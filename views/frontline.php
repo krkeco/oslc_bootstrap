@@ -1,42 +1,12 @@
-<!-- <header class="masterhead" id="about" style="background-color: black;">
-
-<div class="mheader-content" >
-    <div class="mheader-content-inner" style="text-align:left; color: black;">
-    
-    
-    </div>
-  </div>
-  
-</header> -->
-
-<!--       <div class="container frontline-title" >
-        <div class="row" style="background-color: red; font-size: 3em; min-height: 300px; width:" > -->
-  
-  <!--         <div class="container" >
-            <div class="row">
-              <div class="col-12" >
-                <div style="
-                  padding-top: 100px; 
-                  width: 100%; 
-                  min-height: 400px; 
-                  background-color: red;">
-                    Our Savior Lutheran Church in Arcadia
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        </div>
-      </div>
-        -->
 
 
-
- <video style="position: absolute; z-index: -1; background-color: black" width="100%" height="auto" autoplay loop>
+<div class="frontline-video-container">
+ <video class="frontline-video" width="100%"  autoplay muted loop>
   <source src="./img/bgVid.mp4" type="video/mp4">
   
   Your browser does not support the video tag.  Please get a new computer/browser.
 </video> 
+</div>
 
 
     <!-- Load React. -->
@@ -44,33 +14,33 @@
     <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
 
-    <!-- Load our React component. -->
-
-
-
-
-    <div class="frontline-header text-uppercase" >
-      
-      <div class="frontline-title">
-        Our Savior Lutheran Church in Arcadia
-      </div>
-    </div>
           
-    <div style="margin-top: -5em;" id="about">
+    <div style="margin-top:-5vh;" id="about">
 
       
       <div class="mheader-content" >
         <div class="mheader-content-inner" style="text-align:left; color: black;">
     
-          <div class="container" style="text-align: center; ">
+          <div class="container" style="text-align: center; padding-top:150px; ">
             
+            <div style="row">
+              <div class="col-12 frontline-title">
+              
+                <div style="font-size: 0.7em">Welcome To</div>
+                
+                Our Savior Lutheran Church
+                
+               <div style="font-size: 0.7em">in Arcadia</div>
+              </div>
+            </div>
 
             <div style="row">
-              <div class="col-12 col-sm-10 offset-sm-1 offset-md-4 col-md-4">
-                  <div class="recent-box">
+              <div class="col-12 col-sm-10 offset-sm-1 offset-md-2 col-md-8 offset-lg-3 col-lg-6"> 
+                  <div class="recents-box">
 
-                    <h2 class="h2.transbox" style="text-align: center">Recent Uploads</h2>
+                    <h2 class=""frontline-title style="font-size: 2em; text-align: center;">News and Updates</h2>
 
+                    <!-- Load our React component. -->
                     <div id="recent_list_container"></div>
 
                     <script src="recent_list.js"></script>
@@ -81,7 +51,7 @@
 
             <div class="row">
 
-              <div class="tbox-top col-12 col-sm-10 offset-sm-1 offset-md-0 col-md-4" >
+              <div class="col-12 col-sm-10 offset-sm-1 offset-md-0 col-md-4" >
                   <div class="transbox ">
       
                     <h2 class="h2.transbox">Resources</h2>
@@ -97,6 +67,35 @@
                         </div>
                       </a>
                     </div>
+
+
+                    <div>
+                      <a style="" target="_blank" class="mr-auto portfolio-link" href="https://www.lcms.org">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                     
+                            <div class="frontline-link">
+                            LCMS Synod Website
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div>
+                      <a style="" target="_blank" class="mr-auto portfolio-link" href="https://www.psd-lcms.org">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                     
+                            <div class="frontline-link">
+                            LCMS Disctrict Website
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+
+
 
                     <div>
                       <a class="portfolio-link mr-auto text-center" data-toggle="modal" href="#leadership_pop">
@@ -161,21 +160,17 @@
 
 
                     <div>
-
-                      <a style=""
-                     target="_blank"
-                    class="mr-auto portfolio-link"
-                    href="https://www.donate.oslcarcadia.com">
-                       <div class="portfolio-hover">
+                      <a style="" target="_blank" class="mr-auto portfolio-link" href="https://www.donate.oslcarcadia.com">
+                        <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
                      
-                    <div class="frontline-link">
-                    Tithing Online
-                    </div></div></div>
-
+                            <div class="frontline-link">
+                            Online Giving
+                            </div>
+                          </div>
+                        </div>
                       </a>
-
-                  </div>
+                    </div>
 
 
                   </div>
@@ -210,10 +205,10 @@
                 </div>  
               </div>
 
-              <div class="tbox-bot col-12 col-sm-10 offset-sm-1  offset-md-0 col-md-4">
+              <div class=" col-12 col-sm-10 offset-sm-1  offset-md-0 col-md-4">
                 <div class="transbox ">
-                    <a  style="font-weight: 700" data-toggle="modal" href="#directions_pop">
                       <h2>Directions</h2>
+                    <a  style="font-weight: 700" data-toggle="modal" href="#directions_pop">
 
                   <div class="frontline-link">
                       <div class="container">
